@@ -85,5 +85,8 @@ def createComposition(indep_comps,comps,compositions_list,materials_update,path)
     print(f'Point #: {numPoint}')
     print(f'Element #: {eleNum}')
     print(f'relatedElement #: {comp}')
-    newCompositions.to_excel(f'{path}/composition_for_feasibilityMap.xlsx')
+    if len(path) == 0:
+        pass;
+    else:
+        newCompositions.to_excel(f'{path}/composition_for_feasibilityMap.xlsx')
     return Compositions, int(numPoint), comp, len(newCompositions)

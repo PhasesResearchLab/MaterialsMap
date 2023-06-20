@@ -110,6 +110,7 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID'):
             for n,a in enumerate(j['LIQUID']):
                 if float(a) < 1 and float(j['LIQUID'][n+1]) == 1:
                     LiquidusTemp.append(j['TK'][n+1])
+                    continue;
     if len(LiquidusTemp) == 0:
         T_liquid = intial_temperature*len(compositions_list)
     else:
