@@ -1,0 +1,54 @@
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/Users/sunhui/Desktop/new-charge/Feasibility/Ag-Al-Cu.TDB"
+AG
+y
+CU
+1E-5
+
+2025.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/Users/sunhui/Desktop/new-charge/feasibility_map/Simulation/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/2_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/Users/sunhui/Desktop/new-charge/feasibility_map/Simulation/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/2_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/Users/sunhui/Desktop/new-charge/feasibility_map/Simulation/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/2_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/Users/sunhui/Desktop/new-charge/feasibility_map/Simulation/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/2_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/Users/sunhui/Desktop/new-charge/feasibility_map/Simulation/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/2_composition_wt%"
+back
+back

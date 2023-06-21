@@ -107,8 +107,15 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID'):
         f = open(path+'/Pycalphad/Equilibrium Simulation'+'/Result/data_mole.json')
         eq_results = json.load(f)
         for j in eq_results.values():
+            if len(j.keys()) == 1:
+                j = None
+                LiquidusTemp.append(intial_temperature)
+                continue;
             for n,a in enumerate(j['LIQUID']):
-                if float(a) < 1 and float(j['LIQUID'][n+1]) == 1:
+                if n+1 == len(j['LIQUID']):
+                    print('cannot find liquid phase in eq results, start with back up temperature')
+                    LiquidusTemp.append(intial_temperature)
+                elif float(a) < 1 and float(j['LIQUID'][n+1]) == 1:
                     LiquidusTemp.append(j['TK'][n+1])
                     continue;
     if len(LiquidusTemp) == 0:

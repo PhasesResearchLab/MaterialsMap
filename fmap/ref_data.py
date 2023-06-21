@@ -1,3 +1,4 @@
+# Element information (periodic table)
 elementWeight = {
     "H": 1.008, "He": 4.003, "Li": 6.941, "Be": 9.012, "B": 10.81,
     "C": 12.011, "N": 14.007, "O": 15.999, "F": 18.998, "Ne": 20.180,

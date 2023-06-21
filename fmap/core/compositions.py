@@ -12,7 +12,7 @@ from fmap.ref_data import relatedEle
 
 
 
-# Element information (periodic table)
+
 
 
 def generateCompositions(indep_comps,ngridpts):
