@@ -1,5 +1,6 @@
-fmap.ipynb
+MANIFEST.in
 pyproject.toml
+__pycache__/test_thermo_calc_script.cpython-39-pytest-7.3.2.pyc
 fmap/ref_data.py
 fmap.egg-info/PKG-INFO
 fmap.egg-info/SOURCES.txt
@@ -34,65 +35,33 @@ fmap/tests/test_compositions.py
 fmap/tests/test_plotting.py
 fmap/tests/test_pycalphad_run.py
 fmap/tests/test_thermo_calc_script.py
+fmap/tests/__pycache__/__init__.cpython-39.pyc
+fmap/tests/__pycache__/test_compositions.cpython-39-pytest-7.3.2.pyc
+fmap/tests/__pycache__/test_plotting.cpython-39-pytest-7.3.2.pyc
+fmap/tests/__pycache__/test_pycalphad_run.cpython-39-pytest-7.3.2.pyc
+fmap/tests/__pycache__/test_thermo_calc_script.cpython-39-pytest-7.3.2.pyc
 fmap/tests/testsCaseFiles/Ag-Al-Cu.TDB
 fmap/tests/testsCaseFiles/composition_for_feasibilityMap.xlsx
 fmap/tests/testsCaseFiles/setting.npy
-fmap/tests/testsCaseFiles/Pycalphad/Equilibrium Simulation/Result/data_mole.json
-fmap/tests/testsCaseFiles/Pycalphad/Scheil Simulation/Result/data_mole.json
-fmap/tests/testsCaseFiles/Thermo-calc/.Ag-Al-Cu-EqScheil-dynamic_0.667.tif.icloud
-fmap/tests/testsCaseFiles/Thermo-calc/.ScheilPhaseHeatMap.tif.icloud
-fmap/tests/testsCaseFiles/Thermo-calc/.hotTearing_normal.tif.icloud
-fmap/tests/testsCaseFiles/Thermo-calc/.liquidusT (K).tif.icloud
-fmap/tests/testsCaseFiles/Thermo-calc/.solidusT (K).tif.icloud
-fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation\Result\ScheilResults.xlsx
-fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_AL_0.TCM
-fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_CU_0.TCM
 fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_mole.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_wt.exp
-fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/1_AG_0.TCM
 fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/1_mole.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/1_wt.exp
-fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_AL_0.TCM
-fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_CU_0.TCM
 fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_mole.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_wt.exp
-fmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/Result/data_mole.json
-fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_AG-_0.TCM
-fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_CU-_0.TCM
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_composition_wt%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_liquid_mol%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_liquid_wt%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_solid_mol%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_solid_wt%.exp
-fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_AG-_0.TCM
-fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_CU-_0.TCM
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_composition_wt%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_liquid_mol%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_liquid_wt%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_solid_mol%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_solid_wt%.exp
-fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_AL-_0.TCM
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_composition_wt%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_liquid_mol%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_liquid_wt%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_solid_mol%.exp
 fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_solid_wt%.exp
-fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/Result/data_mole.json
-tasks/06-19-2023-Cu-Ag-Al-database-Ag-Al-Cu/composition_for_feasibilityMap.xlsx
-tasks/06-19-2023-Cu-Ag-Al-database-Ag-Al-Cu/setting.npy
-tasks/06-19-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/Equilibrium Simulation/Result/.data_mole.json.icloud
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/composition_for_feasibilityMap.xlsx
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/setting.npy
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/.Ag-Al-Cu-EqScheil-dynamic_0.667.tif.icloud
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/.ScheilPhaseHeatMap.tif.icloud
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/.hotTearing_normal.tif.icloud
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/.liquidusT (K).tif.icloud
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/.solidusT (K).tif.icloud
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/Equilibrium Simulation/Result/data_mole.json
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Pycalphad/Scheil Simulation/Result/data_mole.json
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/0_AL_0.TCM
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/1_AG_0.TCM
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/2_CU_0.TCM
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/0_AL-_0.TCM
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/1_AG-_0.TCM
-tasks/06-20-2023-Cu-Ag-Al-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/2_CU-_0.TCM
+fmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/Result/data.json
