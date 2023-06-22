@@ -85,6 +85,7 @@ class TestCalculations(BaseTestCase):
             os.remove(self.path+'/Thermo-calc/Scheil Simulation/2_AG-_0.TCM')
             os.remove(self.path+'/Thermo-calc/Equilibrium Simulation/Result/data_mole.json')
             os.remove(self.path+'/Thermo-calc/Scheil Simulation/Result/data_mole.json')
+            os.remove(self.path+'/Thermo-calc/Scheil Simulation/Result/ScheilResults.xlsx')
         except OSError as why:
             print(why)
 

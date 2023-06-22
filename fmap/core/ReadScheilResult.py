@@ -94,7 +94,7 @@ def getFinalScheilResult(ScheilResult,folder_Scheil,numFile):
     # print('FailList:',list)
     # print(f'{len(list)} points failed to read')
     result = pd.DataFrame(finalPhases)
-    result.to_excel(f'{folder_Scheil}\Result\ScheilResults.xlsx')
+    result.to_excel(f'{folder_Scheil}/Result/ScheilResults.xlsx')
     print('##########################end reading Scheil#############################')
     return list
 
