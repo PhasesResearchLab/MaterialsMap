@@ -119,7 +119,7 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID'):
                     LiquidusTemp.append(j['TK'][n+1])
                     continue;
     if len(LiquidusTemp) == 0:
-        T_liquid = intial_temperature*len(compositions_list)
+        T_liquid = [intial_temperature]*len(compositions_list)
     else:
         T_liquid = LiquidusTemp
     # Generate points for adaptive Scheil starting points (performance)

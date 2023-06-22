@@ -203,7 +203,7 @@ def getSolidLiquidTFromScheil(ScheilResult,solidCriterion):
                         solidusT.append(Scheil['TK'][i])
     return solidusT, liquidusT
 
-def plotMaps(path, dynamicTRange = True, dynamicRatio = 2/3, ScheilThreshold = 0.05, EqThrshold = 0.1, allowPhase = ['FCC','BCC','HCP','LIQUID'],solidCriterion = 0.001, hotTeartSettings = {'numDataThreshold':10,'CSCPoints':[0.4,0.9,0.99], 'KouPoints':[0.93,0.98], 'CDPoints':[0.7,0.98]}): 
+def plotMaps(path,engine,dynamicTRange = True, dynamicRatio = 2/3, ScheilThreshold = 0.05, EqThrshold = 0.1, allowPhase = ['FCC','BCC','HCP','LIQUID'],solidCriterion = 0.001, hotTeartSettings = {'numDataThreshold':10,'CSCPoints':[0.4,0.9,0.99], 'KouPoints':[0.93,0.98], 'CDPoints':[0.7,0.98]}): 
     #input path(path to simulation result), dynamicTRange (should use Eq T range according to Scheil result?), dynamicRatio (ScheilSolidT*dynamicRatio to ScheilSolidT), ScheilThreshold = 0.05, EqThrshold = 0.1, allowPhase = ['FCC','BCC','HCP','LIQUID']
     ###############################get settings######################################
     path = os.path.abspath(path)
@@ -213,13 +213,12 @@ def plotMaps(path, dynamicTRange = True, dynamicRatio = 2/3, ScheilThreshold = 0
     comps = settings[4]
     composition_data = settings[7]
     ###############################which source to use################################
-    source = input('Please enter the source of the data (1 for Thermo-calc or 2 for Pycalphad): ')
-    while source != '1' and source != '2':
-        source = input('Please enter a value either 1 or 2: ')
-    if source == '1':
+    if engine.lower() == 'pycalphad':
+        path = path + '/Pycalphad'
+    elif engine.lower() == 'thermo-calc' or engine.lower() == 'thermo_calc' or engine.lower() == 'thermocalc':
         path = path + '/Thermo-calc'
     else:
-        path = path + '/Pycalphad'
+        raise Exception('Please choose the calculations engine')
     folder_Scheil = path + '/Scheil Simulation'
     folder_Eq = path + '/Equilibrium Simulation'
     #######################read data from the simulation result#######################
@@ -243,6 +242,7 @@ def plotMaps(path, dynamicTRange = True, dynamicRatio = 2/3, ScheilThreshold = 0
         x = composition_data[xComp].values[index]
         y = composition_data[yComp].values[index]
         coord.append((x, y))
+    
     plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseAmount,EqThrshold,ScheilThreshold,xComp,yComp,dynamicTRange,comps,dynamicRatio)
     solidusT,liquidusT = getSolidLiquidTFromScheil(ScheilResult,solidCriterion)
     plotScheilTemperature(path,solidusT,liquidusT,coord,xComp,yComp,solidCriterion)
@@ -318,8 +318,6 @@ def plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseA
                 continue
 
     fmtted_comps = '-'.join(sorted(set(comps)))
-
-    # result = np.array(result)
     if dynamicTRange:
         ax.set_title(f"{fmtted_comps}_DynamicRatio{round(dynamicRatio,3)}\nEq_Tolerance: {EqThrshold}\nScheil_Tolerance: {ScheilThreshold}", fontname = 'times', fontsize = 10)
     else:

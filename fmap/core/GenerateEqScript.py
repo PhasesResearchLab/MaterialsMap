@@ -17,8 +17,9 @@ def sortCompositions(Compositions): #split the feasibility compositions into dif
             if key != 'Index' and 'Unnamed' not in key and 'Temperature' not in key and 'alloy' not in key:
                 if round(Compositions[key][index],5) == 0:
                     tempt.append(key)
-        lackEle.append(tuple(tempt))
-    lackEle = [item for item in set(lackEle)]
+        if tuple(tempt) not in lackEle:
+            lackEle.append(tuple(tempt))
+    # lackEle = [item for item in set(lackEle)]
     print(lackEle)
     for index_lackEle in range(len(lackEle)):
         Elelist = {}
