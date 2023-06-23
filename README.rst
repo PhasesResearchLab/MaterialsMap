@@ -2,7 +2,7 @@
 Feasibility Map
 ======
 
-A simulation tool using `pycalphad`_ and 'Thermo_Calc'.
+A simulation tool using `pycalphad`_ and Thermo_Calc.
 
 
 .. _pycalphad: http://pycalphad.org
@@ -112,7 +112,7 @@ To install an editable development version with pip:
 .. code-block:: bash
 
     git clone https://github.com/HUISUN24/feasibility_map.git
-    cd scheil
+    cd feasibility_map
     pip install --editable .[dev]
 
 Upgrading scheil later requires you to run ``git pull`` in this directory.
