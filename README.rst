@@ -1,8 +1,8 @@
 ======
-Feasibility
+Feasibility Map
 ======
 
-A simulation tool using `pycalphad`_ and 'Thermo_Calc'_.
+A simulation tool using `pycalphad`_ and 'Thermo_Calc'.
 
 
 .. _pycalphad: http://pycalphad.org
@@ -38,7 +38,7 @@ A simulation tool using `pycalphad`_ and 'Thermo_Calc'_.
 
     # Equilibrium simulation settings
     pressure = 101325
-    database = '/Users/sunhui/Desktop/new-charge/Feasibility/Ag-Al-Cu.TDB' # 'C-Cr-Cu-Fe-Mo-Nb-Ni-03-08.tdb' #'C-Cr-Cu-Fe-Mo-Nb-Ni-10-05.tdb'#'Cr-Fe-Ni-Ti-V_04-05.tdb' # <userDatabase>.TDB or TCFE8
+    database = 'Ag-Al-Cu.TDB' # <userDatabase>.TDB or TCFE8
     eleAmountType = 'massFraction' # Candidates: massFraction massPercent moleFraction molePercent
     output_Eq = f'{TemperatureRange[0]}-{TemperatureRange[1]}-{TemperatureRange[2]}-{comps[0]}-{comps[1]}-{comps[2]}-Eq'
 
@@ -61,14 +61,14 @@ A simulation tool using `pycalphad`_ and 'Thermo_Calc'_.
     settings = [TemperatureRange,numPoint,numSimultion,comp,comps,indep_comps,database,pressure,eleAmountType]
     np.save(f'{path}/setting.npy',settings)  
 
-   # Running with PyCalphad
-   pycalphad_eq(path)
-   pycalphad_scheil(path,2000) # temperature to start scheil if not eq results
+    # Running with PyCalphad
+    pycalphad_eq(path)
+    pycalphad_scheil(path,2000) # temperature to start scheil if not eq results
 
-   # Running with Thermo_Calc
-   # Create TCM files with path
-   createEqScript(path)
-   createScheilScript(path,2000) # temperature to start scheil if not eq results
+    # Running with Thermo_Calc
+    # Create TCM files with path
+    createEqScript(path)
+    createScheilScript(path,2000) # temperature to start scheil if not eq results
 
     # Open TCM files with Thermo_Calc
 
