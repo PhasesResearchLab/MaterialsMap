@@ -33,7 +33,9 @@ A simulation tool using `pycalphad`_ and 'Thermo_Calc'.
         if i in periodic_table:
             materials[i] = {i:1}
         elif i not in materials.keys():
-            materials[i] = {'SS304L':{'Ni':0.09611451943, 'Cr':0.1993865031, 'Fe':0.7044989775}}# the composition of this element/alloys(in weight fractions)
+            # the composition of this element/alloys(in weight fractions)
+            materials[i] = {'SS304L':{'Ni':0.09611451943, 'Cr':0.1993865031, 'Fe':0.7044989775}}
+        
     maxNumSim = 250  # maximum number of simulations in each TCM file
 
     # Equilibrium simulation settings
@@ -77,7 +79,7 @@ A simulation tool using `pycalphad`_ and 'Thermo_Calc'.
     getScheilSolidPhase(path)
 
     # Plot deleterious phase diagram and crack susceptibility map 
-    plotMaps(path,'pycalphad',dynamicTRange = True, dynamicRatio = 2/3, ScheilThreshold = 0.05, EqThrshold = 0.1, allowPhase = ['FCC','BCC','HCP','LIQUID'],solidCriterion = 0.001)
+    plotMaps(path,'pycalphad')
 
 .. image:: https://raw.githubusercontent.com/pycalphad/scheil/master/docs/_static/Al-30Zn_Scheil_simulation.png
     :align: center
