@@ -6,7 +6,7 @@ from fmap.core.GenerateEqScript import getSettings, sortCompositions, findMainEl
 #==============================================================================#
 ############################Scheil script#######################################
 # database = settings[-2]
-# output_Scheil = f'{comps[0]}-{comps[1]}-{comps[2]}-Scheil'
+# output_Scheil = f'{comp[0]}-{comps[1]}-{comps[2]}-Scheil'
 # backupStartTemp = 1600
 # temperatureStep = 1
 # iterationNum = 1000
@@ -44,15 +44,14 @@ def getLiquidusTempforPoints(EqResult, backupStartTemp, numFile, liquidName):
     return LiquidusTemp
 
 def createScheilScript(path, backupStartTemp,liquidName = 'LIQUID', temperatureStep = 1,iterationNum = 2000,finalLiquidFraction = 0.001,GlobalMinimization = True, retainPhase = False,rejectPhase = False,fastDiffusing = False,maxNumSim = 999, database = None, eleAmountType = 'massFraction'):
-    settings = getSettings(path) #[TRange, numFile, comp1, comp2, comps, folder_Eq, folder_Scheil, composition_data, Compositions, comp, pressure, database]
+    settings = getSettings(path) #[TRange, numFile, comp1, comp2, comp, folder_Eq, folder_Scheil, composition_data, Compositions, comps, pressure, database]
     if database == None:
         database = settings[11]
     path = os.path.abspath(path)
-    comps = settings[4]
+    comp = settings[4]
     Compositions = settings[8]
     ScheilFolder = settings[6]
     EqFolder = settings[5]
-    print(settings)
     ScheilFolder = settings[6]
     numFile = settings[1]
     try:
@@ -111,12 +110,12 @@ def createScheilScript(path, backupStartTemp,liquidName = 'LIQUID', temperatureS
     print('Finish reading liquidus temperature for each point from equilibrium results ...')
     print('##################Start to write Scheil script#######################')
     output = sortCompositions(Compositions)
-    comps = [item.upper() for item in comps]
+    comp = [item.upper() for item in comp]
     index_compositionList = 0
     for Compositions in output:
         compositions = {}
         relatedEles = []
-        for ele in comps:
+        for ele in comp:
             compositions[ele] = Compositions[ele]
             if Compositions[ele][0] != 0:
                 relatedEles.append(ele)
@@ -147,20 +146,20 @@ def createScheilScript(path, backupStartTemp,liquidName = 'LIQUID', temperatureS
                 f.write(database)
             else:
                 f.write('user ' + '"'+database+'"')
-            mainEle = findMainElement(compositions, comps, index)
+            mainEle = findMainElement(compositions, comp, index)
             f.write('\n')
             f.write(f'{mainEle}\n')
             #use mass percent
             f.write('y\n')
             includedEles = [mainEle]
             num_ele = 0
-            for ele in comps:
+            for ele in comp:
                 if ele != mainEle and round(compositions[ele][index] * 100, 5) != 0:
                     includedEles.append(ele)
                     f.write(f'{ele}\n')
                     f.write(f'{round(compositions[ele][index] * 100, 5)}\n') #should be in mass percent
             if num_ele == 0:
-                for i in comps:
+                for i in comp:
                     if i != mainEle:
                         f.write(f'{i}\n')
                         f.write('1E-5\n') #should be in mass percent         

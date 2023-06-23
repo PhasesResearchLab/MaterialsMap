@@ -9,12 +9,6 @@ from multiprocessing import Pool
 from tqdm import tqdm
 from fmap.ref_data import relatedEle
 
-
-
-
-
-
-
 def generateCompositions(indep_comps,ngridpts):
     axisList = [item for item in np.arange(0,1+1/ngridpts, 1/ngridpts)]
     comps = []
@@ -23,8 +17,6 @@ def generateCompositions(indep_comps,ngridpts):
             if x+y <= 1:
                 comps.append({indep_comps[0]:x, indep_comps[1]:y})
     return comps
-
-
 
 def getCompostion(indep_comps,alloyCompostion,comps,materials_update): # get element composition from alloy composition
     wtPercent = alloyCompostion

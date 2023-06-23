@@ -136,8 +136,8 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID'):
         print(f"{composition} ({num+1}/{len(compositions_list)})")
         for key,val in composition.items():
             composition[key] = float("{:.6f}".format(val))    
-        iter_args_scheil.append([dbf, comps, phases, composition, T_liquid[num], 1.0,'LIQUID', {'calc_opts': {'points': points_dict}},
-                                   0.0001, False, True])
+        iter_args_scheil.append((dbf, comps, phases, composition, T_liquid[num], 1.0,'LIQUID', {'calc_opts': {'points': points_dict}},
+                                   0.0001, False, True))
     # Multiprocessing step:
     cores = os.cpu_count() - 1
     
