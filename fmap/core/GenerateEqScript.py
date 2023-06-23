@@ -79,16 +79,16 @@ def getSettings(path): #get settings when generating the compositions of the fea
     for item in data.keys():
         if 'Unnamed' not in item:
             Compositions[item] = data[item].values
-    return [TRange, numFile, comp1, comp2, comps, folder_Eq, folder_Scheil, composition_data, Compositions, comp, pressure, database]
+    return [TRange, numFile, comp1, comp2, comp, folder_Eq, folder_Scheil, composition_data, Compositions, comps, pressure, database]
     
 
 def createEqScript(path, maxNumSim = 999, database = None, eleAmountType = 'massFraction'): # eleAmountType = 'massFraction' or 'moleFraction', maxNumSim is the maximum number of simulation in each TCM script
     #outputFileName: numScript(related to different comps)_comp(related elements in this script)_numFile(if exceed the maxNumSim, the script will be splited)
     ################ get settings ################
-    settings = getSettings(path) #[TRange, numFile, comp1, comp2, comps, folder_Eq, folder_Scheil, composition_data, Compositions, comp, pressure, database]
+    settings = getSettings(path) #[TRange, numFile, comp1, comp2, comp, folder_Eq, folder_Scheil, composition_data, Compositions, comps, pressure, database]
     path = os.path.abspath(path)
     Compositions = settings[8]
-    comp = settings[9]
+    comp = settings[4]
     if database == None:
         database = settings[11]
     output_Eq = settings[5]
