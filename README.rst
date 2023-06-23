@@ -130,5 +130,5 @@ Uses equilibrium and Scheil simulations to allow material design with properties
 License
 =======
 
-scheil is MIT licensed. See LICENSE.
+feasibility_map is GNU General Public License v3.0 licensed. See LICENSE.
 
