@@ -146,7 +146,7 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID'):
     # Chang scheil result to dict
     scheil_result = defaultdict(dict)
     for num,i in enumerate(scheil_results_ori):
-        scheils = i[1].to_dict()
+        scheils = i.to_dict()
         scheil_result['Point'+str(num)]['TK'] = scheils['temperatures']
         for pha,val in scheils['phase_amounts'].items():
             if np.sum(val) != 0:
