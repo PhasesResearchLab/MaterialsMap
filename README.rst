@@ -15,14 +15,14 @@ A simulation tool using `pycalphad`_ and Thermo_Calc.
     import matplotlib.pyplot as plt
     import numpy as np
     import pandas as pd
-    from fmap.core.compositions import generateCompositions,createComposition
-    from fmap.ref_data import periodic_table,materials
-    from fmap.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
-    from fmap.core.GenerateEqScript import createEqScript
-    from fmap.core.ReadEqResult import getEqdata
-    from fmap.core.GenerateScheilScript import createScheilScript
-    from fmap.core.ReadScheilResult import getScheilSolidPhase
-    from fmap.plot.FeasibilityMap import plotMaps
+    from fmat.core.compositions import generateCompositions,createComposition
+    from fmat.ref_data import periodic_table,materials
+    from fmat.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
+    from fmat.core.GenerateEqScript import createEqScript
+    from fmat.core.ReadEqResult import getEqdata
+    from fmat.core.GenerateScheilScript import createScheilScript
+    from fmat.core.ReadScheilResult import getScheilSolidPhase
+    from fmat.plot.FeasibilityMap import plotMaps
 
     # Create Compositions
     comps = ['SS304L','NiCr','V']
