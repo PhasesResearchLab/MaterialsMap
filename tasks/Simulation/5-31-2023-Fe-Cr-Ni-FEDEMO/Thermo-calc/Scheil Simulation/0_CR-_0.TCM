@@ -1,0 +1,50 @@
+SET_ECHO
+
+
+GO SCHEIL
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+FEDEMO
+CR
+y
+
+1931.84
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+902_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+902_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+902_solid_wt%
+s-d-a y BL
+plot
+m-e
+902_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+902_composition_wt%
+back
+back

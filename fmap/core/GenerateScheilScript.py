@@ -26,6 +26,17 @@ from fmap.core.GenerateEqScript import getSettings, sortCompositions, findMainEl
 # rejectPhase and retainPhase, only one of them can be true
 ###############################################################
 def getLiquidusTempforPoints(EqResult, backupStartTemp, numFile, liquidName):
+    """Getting the liquidus temperature from eq results to start scheil simulations
+
+    Args:
+        EqResult (dict): Dict that contains the eq results
+        backupStartTemp (int): the temperature that user define 
+        numFile (int): the number of files
+        liquidName (str): the name of liquid phase
+
+    Returns:
+        list: list of liquidus temperature based on eq results
+    """
     LiquidusTemp = []
     for index in range(numFile):
         if EqResult == None or EqResult['Point'+str(index)] == None:
@@ -44,6 +55,26 @@ def getLiquidusTempforPoints(EqResult, backupStartTemp, numFile, liquidName):
     return LiquidusTemp
 
 def createScheilScript(path, backupStartTemp,liquidName = 'LIQUID', temperatureStep = 1,iterationNum = 2000,finalLiquidFraction = 0.001,GlobalMinimization = True, retainPhase = False,rejectPhase = False,fastDiffusing = False,maxNumSim = 999, database = None, eleAmountType = 'massFraction'):
+    """generate the TCM files for scheil calculations based on settings
+
+    Args:
+        path (str): path to the stored setting results
+        backupStartTemp (int): the temperature that user define 
+        liquidName (str, optional): liquid phase name. Defaults to 'LIQUID'.
+        temperatureStep (int, optional): Defaults to 1.
+        iterationNum (int, optional): Defaults to 2000.
+        finalLiquidFraction (float, optional): Defaults to 0.001.
+        GlobalMinimization (bool, optional): Defaults to True.
+        retainPhase (bool, optional): Defaults to False.
+        rejectPhase (bool, optional): Defaults to False.
+        fastDiffusing (bool, optional): Defaults to False.
+        maxNumSim (int, optional): Defaults to 999.
+        database (_type_, optional):  Defaults to the one in the settings.
+        eleAmountType (str, optional): Defaults to 'massFraction'.
+
+    Returns:
+        TCM files: numScript(related to different comps)_comp(related elements in this script)_numFile(if exceed the maxNumSim, the script will be splited)
+    """
     settings = getSettings(path) #[TRange, numFile, comp1, comp2, comp, folder_Eq, folder_Scheil, composition_data, Compositions, comps, pressure, database]
     if database == None:
         database = settings[11]

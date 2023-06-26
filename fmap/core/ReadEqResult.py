@@ -27,7 +27,17 @@ def sortOutputbyT(output,T):
                     output[item][j], output[item][j+1] = output[item][j+1], output[item][j]
     return output
 
-def readEqFromFile(folder_Eq, file_index, Mole = True): # if Mole is True, then read mole fraction for phase, else read weight fraction for phase
+def readEqFromFile(folder_Eq, file_index, Mole = True): 
+    """if Mole is True, then read mole fraction for phase, else read weight fraction for phase
+
+    Args:
+        folder_Eq (path): path to folder that contains eq results
+        file_index (int): index of the TCM files
+        Mole (bool, optional): Defaults to True.
+
+    Returns:
+        dict: eq results sorted by T
+    """
     if Mole:
         fileName = f'{folder_Eq}/{file_index}_mole.exp'
     else:
@@ -76,7 +86,17 @@ def transferTempToKelvin(data,numFile):
             del data[f'Point{index}']['TC']
     return data
 
-def getEqdata(path, readMole = True): # if readMole is True, then read mole fraction for phase, else read weight fraction for phase
+def getEqdata(path, readMole = True):
+    """read eq results from exp files
+    if readMole is True, then read mole fraction for phase, else read weight fraction for phase
+
+    Args:
+        path (str): path to store the results
+        readMole (bool, optional): _description_. Defaults to True.
+
+    Returns:
+        json: data_more.json that contains all eq results
+    """
     print('###################################################################')
     print('####################### Reading Eq Result #########################')
 

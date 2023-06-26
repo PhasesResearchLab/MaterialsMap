@@ -15,6 +15,15 @@ from sys import argv
 import json
 
 def pycalphad_eq(path):
+    """running and store equlibrium calculations based on the settings on path
+
+    Args:
+        path (str): path to open the setting and store the results
+
+    Returns:
+        json: data_more.json that contains all eq results
+    """
+
     setting = np.load(f'{path}/setting.npy',allow_pickle=True)
     dbf = Database(setting[6])
     comps = []
@@ -78,7 +87,20 @@ def pycalphad_eq(path):
     f.write(output_File)
     f.close()
 
-def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID'):
+def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperature=1.0,eq_kwargs=None,stop=0.0001, verbose=False, adaptive=True):
+    """running and store scheil simulations based on the settings on path
+
+    Args:
+        path (str): path to open the setting and store the results
+        intial_temperature (_type_): the temperature of scheil
+        liquid_name (str, optional): Defaults to 'LIQUID'.
+        step_temperature (float, optional): Defaults to 1.0.
+        eq_kwargs (_type_, optional): keywords pass to eq calculations. Defaults to None.
+        stop (float, optional): the liqud fraction to stop scheil simulations. Defaults to 0.0001.
+        verbose (bool, optional): Defaults to False.
+        adaptive (bool, optional): Dynamic zoom in when close to stop. Defaults to True.
+    """                   
+
     setting = np.load(f'{path}/setting.npy',allow_pickle=True)
     dbf = Database(setting[6])
     comps = []
@@ -130,14 +152,20 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID'):
             points_dict[phase_name] = _sample_phase_constitution(mod, point_sample, True, 500)
         except DofError:
             pass
+    liquid_name = 'LIQUID'
+    step_temperature = 1.0
+    eq_kwargs = {'calc_opts': {'points': points_dict}}
+    stop = 0.0001
+    verbose = False
+    adaptive = True
     # Run simulations
     iter_args_scheil = []
     for num, composition in enumerate(compositions_list):
         print(f"{composition} ({num+1}/{len(compositions_list)})")
         for key,val in composition.items():
             composition[key] = float("{:.6f}".format(val))    
-        iter_args_scheil.append((dbf, comps, phases, composition, T_liquid[num], 1.0,'LIQUID', {'calc_opts': {'points': points_dict}},
-                                   0.0001, False, True))
+        iter_args_scheil.append((dbf, comps, phases, composition, T_liquid[num], step_temperature,liquid_name, eq_kwargs,
+                                   stop, verbose, adaptive))
     # Multiprocessing step:
     cores = os.cpu_count() - 1
     

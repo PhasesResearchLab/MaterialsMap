@@ -6,19 +6,37 @@ from tqdm import tqdm
 import pandas as pd
 
 def getPhaseNamesInSequence(fileName,liquidPhase):
-        PhaseNames = []
-        f = open(fileName,'r')
-        lines = f.readlines()
-        for i in range(len(lines)):
-            words = lines[i].split()
-            if words != [] and words[0] == '$E' and len(words) > 1:
-                phase = words[1:]
-                if liquidPhase not in phase[0] and phase[0] not in PhaseNames:
-                    PhaseNames.append(phase[0])
-        f.close()
-        return PhaseNames
+    """rearrange the scheil results based on phase names
+
+    Args:
+        fileName (str): name of files that contains the scheil results
+        liquidPhase (str): name of liquid phase
+
+    Returns:
+        list: list of scheil phase name
+    """
+    PhaseNames = []
+    f = open(fileName,'r')
+    lines = f.readlines()
+    for i in range(len(lines)):
+        words = lines[i].split()
+        if words != [] and words[0] == '$E' and len(words) > 1:
+            phase = words[1:]
+            if liquidPhase not in phase[0] and phase[0] not in PhaseNames:
+                PhaseNames.append(phase[0])
+    f.close()
+    return PhaseNames
 
 def linkPhaseAndTemp(currentPhases, currentTemp):
+    """create dicts that have both phase name and T
+
+    Args:
+        currentPhases (dict)): dict of all realted phases and fraction
+        currentTemp (dict): dict of temperature
+
+    Returns:
+        dict: dicts of all realted phases, fraction and temperature
+    """
     Models = []
     n_neighbors = 2
     weights = 'distance'
@@ -34,6 +52,14 @@ def linkPhaseAndTemp(currentPhases, currentTemp):
     return result
 
 def getAllPhases(ScheilResult):
+    """read scheil results from exp files
+
+    Args:
+        ScheilResult (dict): dicts that contains the scheil results
+
+    Returns:
+        set: a set of unique phases
+    """
     phases = []
     # i = 0
     for item in ScheilResult.keys():
@@ -45,6 +71,16 @@ def getAllPhases(ScheilResult):
     return phases
 
 def getFinalScheilResult(ScheilResult,folder_Scheil,numFile):
+    """get scheil results from exp
+
+    Args:
+        ScheilResult (dict): dict of scheil results
+        folder_Scheil (str): path to open/store the results
+        numFile (int): number of files in the scheil folder
+
+    Returns:
+        xlsx: an excel sheet that contains the scheil results
+    """
     print('####################################################################')
     print('Getting final Scheil result...')
     phaseNames = getAllPhases(ScheilResult)
@@ -99,6 +135,16 @@ def getFinalScheilResult(ScheilResult,folder_Scheil,numFile):
     return list
 
 def readLiqAndSolT(folder_Scheil, numFile):
+    """read the liquidius and solidius temperature from exp files
+
+    Args:
+        folder_Scheil (str): path to open/store the results
+        numFile (int): number of files in the scheil folder
+
+    Returns:
+        dict: dict of liquidius and solidius temperature
+        list: list of fail to read the results
+    """
     print('Read Scheil Temperature vs Liquid fraction (mole):')
     result = dict()
     temperature = []
@@ -141,6 +187,16 @@ def readLiqAndSolT(folder_Scheil, numFile):
     return result, index_fail
 
 def combineLiqAndSolT(ScheilLiquidResult, ScheilResult, numFile):
+    """combined scheil liquid phase fraction and liquidius and solidius temperature
+
+    Args:
+        ScheilLiquidResult (dict): dcit of scheil liquidius and solidius temperature
+        ScheilResult (dict): dict of scheil liquid phase fraction
+        numFile (int): number of files in the scheil folder
+
+    Returns:
+        dict: dict of combined results
+    """
     finalResult = dict()
     for index in range(numFile):
         solid = ScheilResult[f'Point{index}']
@@ -167,6 +223,15 @@ def transferTempToKelvin(data,numFile):
     return data
 
 def getScheilSolidPhase(path, liquidPhase = 'LIQUID'):
+    """read scheil results from exp file
+
+    Args:
+        path (str): path to store the results
+        liquidPhase (str, optional): name of liquid phase. Defaults to 'LIQUID'.
+
+    Returns:
+        json: data_more.json that contains all scheil results
+    """
     print('#####################################################')
     print('#############start reading Scheil Result#############')
     #####################read settings######################
