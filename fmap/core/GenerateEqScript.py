@@ -7,7 +7,14 @@ import numpy as np
 # default composition excel file should be in weight fraction
 ##############################################
 
-def sortCompositions(Compositions): #split the feasibility compositions into different groups with different lack elements
+def sortCompositions(Compositions): 
+    """split the feasibility compositions into different groups with different lack elements
+    Args:
+        Compositions (list): List combinations of independent elements
+
+    Returns:
+        dict: Dicts of List combinations of independent elements with key as differeent element groups
+    """
     output = []
     lackEle = []
     for index in tqdm(range(len(Compositions['Index']))):
@@ -40,13 +47,31 @@ def sortCompositions(Compositions): #split the feasibility compositions into dif
                 output[ii][key].append(Compositions[key][index])
     return output
 
-def findMainElement(compositions, elements, index): #when generating script, use the main element to be the dependent element
+def findMainElement(compositions, elements, index):
+    """when generating script, use the main element to be the dependent element
+
+    Args:
+        compositions (list): List combinations of independent elements
+        elements (list): List of related elements
+        index (int): the index of the main element in composition list
+
+    Returns:
+        list: add main element into element list
+    """
     fraction = []
     for ele in elements:
         fraction.append(round(compositions[ele][index],5))
     return elements[fraction.index(max(fraction))]
 
-def getSettings(path): #get settings when generating the compositions of the feasibility map
+def getSettings(path): 
+    """get settings when generating the compositions of the feasibility map
+
+    Args:
+        path (str): path to the stored setting results
+
+    Returns:
+        set: rearrange the parameters in settings
+    """
     ##############################get settings######################################
     settings = np.load(f'{path}/setting.npy',allow_pickle=True) #settings = [TemperatureRange,numPoint,numSimultion,relatedEles,terminalAlloys,indep_terminalAlloys,database,pressure]
     comp = settings[3]
@@ -82,8 +107,18 @@ def getSettings(path): #get settings when generating the compositions of the fea
     return [TRange, numFile, comp1, comp2, comp, folder_Eq, folder_Scheil, composition_data, Compositions, comps, pressure, database]
     
 
-def createEqScript(path, maxNumSim = 999, database = None, eleAmountType = 'massFraction'): # eleAmountType = 'massFraction' or 'moleFraction', maxNumSim is the maximum number of simulation in each TCM script
-    #outputFileName: numScript(related to different comps)_comp(related elements in this script)_numFile(if exceed the maxNumSim, the script will be splited)
+def createEqScript(path, maxNumSim = 999, database = None, eleAmountType = 'massFraction'): 
+    """generate the TCM files for eq calculations based on settings
+
+    Args:
+        path (str): path to the stored setting results
+        maxNumSim (int, optional): the maximum number of simulations in each TCM file. Defaults to 999.
+        database (str, optional): the path to database or database name that indeside thermo_calc. Defaults to None.
+        eleAmountType (str, optional): the element amount type. Defaults to 'massFraction'.
+
+    Returns:
+        TCM files: numScript(related to different comps)_comp(related elements in this script)_numFile(if exceed the maxNumSim, the script will be splited)
+    """
     ################ get settings ################
     settings = getSettings(path) #[TRange, numFile, comp1, comp2, comp, folder_Eq, folder_Scheil, composition_data, Compositions, comps, pressure, database]
     path = os.path.abspath(path)

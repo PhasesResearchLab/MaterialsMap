@@ -1,0 +1,1602 @@
+@@ 0th simulation, 2.5% ##############################
+set-echo
+
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.02439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+1_mole.exp
+tabulate
+PhaseWt
+1_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 1th simulation, 5.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.04878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+2_mole.exp
+tabulate
+PhaseWt
+2_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 2th simulation, 7.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.07317
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+3_mole.exp
+tabulate
+PhaseWt
+3_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 3th simulation, 10.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.09756
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+4_mole.exp
+tabulate
+PhaseWt
+4_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 4th simulation, 12.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.12195
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+5_mole.exp
+tabulate
+PhaseWt
+5_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 5th simulation, 15.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.14634
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+6_mole.exp
+tabulate
+PhaseWt
+6_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 6th simulation, 17.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.17073
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+7_mole.exp
+tabulate
+PhaseWt
+7_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 7th simulation, 20.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.19512
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+8_mole.exp
+tabulate
+PhaseWt
+8_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 8th simulation, 22.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.21951
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+9_mole.exp
+tabulate
+PhaseWt
+9_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 9th simulation, 25.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.2439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+10_mole.exp
+tabulate
+PhaseWt
+10_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 10th simulation, 27.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.26829
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+11_mole.exp
+tabulate
+PhaseWt
+11_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 11th simulation, 30.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.29268
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+12_mole.exp
+tabulate
+PhaseWt
+12_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 12th simulation, 32.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.31707
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+13_mole.exp
+tabulate
+PhaseWt
+13_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 13th simulation, 35.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.34146
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+14_mole.exp
+tabulate
+PhaseWt
+14_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 14th simulation, 37.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.36585
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+15_mole.exp
+tabulate
+PhaseWt
+15_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 15th simulation, 40.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.39024
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+16_mole.exp
+tabulate
+PhaseWt
+16_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 16th simulation, 42.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.41463
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+17_mole.exp
+tabulate
+PhaseWt
+17_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 17th simulation, 45.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.43902
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+18_mole.exp
+tabulate
+PhaseWt
+18_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 18th simulation, 47.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.46341
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+19_mole.exp
+tabulate
+PhaseWt
+19_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 19th simulation, 50.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(NI) = 0.4878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+20_mole.exp
+tabulate
+PhaseWt
+20_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 20th simulation, 52.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.4878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+21_mole.exp
+tabulate
+PhaseWt
+21_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 21th simulation, 55.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.46341
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+22_mole.exp
+tabulate
+PhaseWt
+22_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 22th simulation, 57.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.43902
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+23_mole.exp
+tabulate
+PhaseWt
+23_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 23th simulation, 60.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.41463
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+24_mole.exp
+tabulate
+PhaseWt
+24_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 24th simulation, 62.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.39024
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+25_mole.exp
+tabulate
+PhaseWt
+25_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 25th simulation, 65.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.36585
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+26_mole.exp
+tabulate
+PhaseWt
+26_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 26th simulation, 67.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.34146
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+27_mole.exp
+tabulate
+PhaseWt
+27_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 27th simulation, 70.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.31707
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+28_mole.exp
+tabulate
+PhaseWt
+28_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 28th simulation, 72.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.29268
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+29_mole.exp
+tabulate
+PhaseWt
+29_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 29th simulation, 75.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.26829
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+30_mole.exp
+tabulate
+PhaseWt
+30_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 30th simulation, 77.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.2439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+31_mole.exp
+tabulate
+PhaseWt
+31_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 31th simulation, 80.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.21951
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+32_mole.exp
+tabulate
+PhaseWt
+32_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 32th simulation, 82.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.19512
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+33_mole.exp
+tabulate
+PhaseWt
+33_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 33th simulation, 85.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.17073
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+34_mole.exp
+tabulate
+PhaseWt
+34_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 34th simulation, 87.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.14634
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+35_mole.exp
+tabulate
+PhaseWt
+35_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 35th simulation, 90.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.12195
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+36_mole.exp
+tabulate
+PhaseWt
+36_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 36th simulation, 92.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.09756
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+37_mole.exp
+tabulate
+PhaseWt
+37_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 37th simulation, 95.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.07317
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+38_mole.exp
+tabulate
+PhaseWt
+38_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 38th simulation, 97.5% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.04878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+39_mole.exp
+tabulate
+PhaseWt
+39_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 39th simulation, 100.0% ##############################
+go data
+FEDEMO
+def-sys NI FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c W(FE) = 0.02439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+40_mole.exp
+tabulate
+PhaseWt
+40_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back

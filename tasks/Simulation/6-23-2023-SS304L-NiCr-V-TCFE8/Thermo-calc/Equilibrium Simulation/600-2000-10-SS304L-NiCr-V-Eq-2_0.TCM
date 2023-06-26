@@ -1,0 +1,41 @@
+@@ 0th simulation, 100.0% ##############################
+set-echo
+
+go data
+TCFE8
+def-sys V 
+get
+go p-3
+reinit
+s-c P=101325 T=2273.15
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 873.15 2273.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+41_mole.exp
+tabulate
+PhaseWt
+41_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back

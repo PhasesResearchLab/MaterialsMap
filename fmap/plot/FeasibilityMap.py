@@ -9,7 +9,17 @@ import fmap.plot.feasibility_helpers
 import math
 
 
-def readResult(folder_Scheil,folder_Eq, readMole = True):#read the previously saved Scheil and Eq result
+def readResult(folder_Scheil,folder_Eq, readMole = True):
+    """read the previously saved Scheil and Eq result
+
+    Args:
+        folder_Scheil (str): path to folder that contains scheil results
+        folder_Eq (str): path to folder that contains eq results
+        readMole (bool, optional): _description_. Defaults to True.
+
+    Returns:
+        dcit: dict of eq and scheil results
+    """
     if readMole:
         f_Scheil = open(f'{folder_Scheil}/Result/data_mole.json')
         f_Eq = open(f'{folder_Eq}/Result/data_mole.json')
@@ -20,7 +30,18 @@ def readResult(folder_Scheil,folder_Eq, readMole = True):#read the previously sa
     EqResult = json.load(f_Eq)
     return ScheilResult, EqResult
 
-def readDynamicFeasibility(ScheilResult, EqResult, ratio = 2/3):# get dynamic Eq result from ratio*ScheilSolidusT to ScheilSolidusT
+def readDynamicFeasibility(ScheilResult, EqResult, ratio = 2/3):
+    """get dynamic Eq result from ratio*ScheilSolidusT to ScheilSolidusT
+
+    Args:
+        ScheilResult (dcit): dict of scheil results
+        EqResult (dcit): dict of eq results
+        ratio (float): ratio of T/Tmelt. Defaults to 2/3.
+
+    Returns:
+        dict: eq results only consider custmoize T and higher
+    """
+
     numFile = len([item for item in ScheilResult.keys()])
     newEqResult = {}
     for i in range(numFile):
@@ -46,7 +67,15 @@ def readDynamicFeasibility(ScheilResult, EqResult, ratio = 2/3):# get dynamic Eq
                             newEqResult[f'Point{i}'][key].append(Eq[key][index])
     return newEqResult
 
-def getPhases(result): #get related phases in the simulations for the currect materials system
+def getPhases(result): 
+    """get related phases in the simulations for the currect materials system
+
+    Args:
+        result (dict): dict of eq/scheil results
+
+    Returns:
+        list: list of phase names
+    """
     numFile = len([item for item in result.keys()])
     phases = []
     for i in range(numFile):
@@ -56,7 +85,17 @@ def getPhases(result): #get related phases in the simulations for the currect ma
                     phases.append(key)
     return phases
 
-def findMaxUnallowedPhaseEq(EqResult, allowedPhases): #return a list of max unallowed phase amount for each point (Equilibrium)
+def findMaxUnallowedPhaseEq(EqResult, allowedPhases): 
+    """find the max amount of unallowed phase for eq results
+
+    Args:
+        EqResult (dict): dict of eq results
+        allowedPhases (list): list of allowed phases
+
+    Returns:
+        list: a list of max unallowed phase amount for each point (Equilibrium)
+    """
+    #return a list of max unallowed phase amount for each point (Equilibrium)
     numFile = len([item for item in EqResult.keys()])
     EqMaxBadPhaseAmount = []
     for i in range(numFile):
@@ -74,7 +113,16 @@ def findMaxUnallowedPhaseEq(EqResult, allowedPhases): #return a list of max unal
             EqMaxBadPhaseAmount.append(1 - min(allowedPhaseAmount))
     return EqMaxBadPhaseAmount
 
-def getFinalScheilResult(ScheilResult): #get the final Scheil result for each point
+def getFinalScheilResult(ScheilResult): 
+    """get the final Scheil result for each point
+
+    Args:
+        ScheilResult (dict): dict of scheil results
+
+    Returns:
+        dcit: get the final Scheil result for each point
+    """
+
     numFile = len([item for item in ScheilResult.keys()])
     phaseNames = getPhases(ScheilResult)
     finalPhases = dict()
@@ -122,7 +170,17 @@ def getFinalScheilResult(ScheilResult): #get the final Scheil result for each po
                 finalPhases[phase].append('')
     return finalPhases
 
-def findMaxUnallowedPhaseScheil(finalScheilResults, allowedPhases): #return a list of max unallowed phase amount for each point (Scheil)
+def findMaxUnallowedPhaseScheil(finalScheilResults, allowedPhases): 
+    """find the max amount of unallowed phase for scheil results
+
+    Args:
+        finalScheilResults (dict): dict of scheil results
+        allowedPhases (list): list of allowed phases
+
+    Returns:
+        list: a list of max unallowed phase amount for each point (Scheil)
+    """
+    #return a list of max unallowed phase amount for each point (Scheil)
     ScheilMaxBadPhaseAmount = []
     for i in range(len(finalScheilResults['Point'])):
         hasScheilResult = True
@@ -141,6 +199,15 @@ def findMaxUnallowedPhaseScheil(finalScheilResults, allowedPhases): #return a li
     return ScheilMaxBadPhaseAmount
 
 def getSolidLiquidTFromScheil(ScheilResult,solidCriterion):
+    """read solidius and liquidius temperature from scheil results
+
+    Args:
+        ScheilResult (dict: dict of scheil results
+        solidCriterion (float): fraction for solid phase fraction
+
+    Returns:
+        list: list of solidus and liquidius temperature
+    """
     solidusT = []
     liquidusT = []
     numFile = len([item for item in ScheilResult.keys()])
@@ -204,6 +271,22 @@ def getSolidLiquidTFromScheil(ScheilResult,solidCriterion):
     return solidusT, liquidusT
 
 def plotMaps(path,engine,dynamicTRange = True, dynamicRatio = 2/3, ScheilThreshold = 0.05, EqThrshold = 0.1, allowPhase = ['FCC','BCC','HCP','LIQUID'],solidCriterion = 0.001, hotTeartSettings = {'numDataThreshold':10,'CSCPoints':[0.4,0.9,0.99], 'KouPoints':[0.93,0.98], 'CDPoints':[0.7,0.98]}): 
+    """plot all realted figures
+
+    Args:
+        path (str): path to open the setting and store the results
+        engine (str): computational engine, 'pycalphad' or 'thermo_calc'
+        dynamicTRange (bool, optional): Defaults to True.
+        dynamicRatio (float, optional): Defaults to 2/3.
+        ScheilThreshold (float, optional): Defaults to 0.05.
+        EqThrshold (float, optional): Defaults to 0.1.
+        allowPhase (list, optional): Defaults to ['FCC','BCC','HCP','LIQUID'].
+        solidCriterion (float, optional): Defaults to 0.001.
+        hotTeartSettings (dict, optional): Defaults to {'numDataThreshold':10,'CSCPoints':[0.4,0.9,0.99], 'KouPoints':[0.93,0.98], 'CDPoints':[0.7,0.98]}.
+
+    Returns:
+        TIF: all figures store in path
+    """
     #input path(path to simulation result), dynamicTRange (should use Eq T range according to Scheil result?), dynamicRatio (ScheilSolidT*dynamicRatio to ScheilSolidT), ScheilThreshold = 0.05, EqThrshold = 0.1, allowPhase = ['FCC','BCC','HCP','LIQUID']
     ###############################get settings######################################
     path = os.path.abspath(path)
@@ -335,6 +418,20 @@ def plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseA
     return None
 
 def plotScheilTemperature(path,solidusT,liquidusT,coord,xComp,yComp,solidCriterion):
+    """plot solidius and liquidus T from scheil results
+
+    Args:
+        path (str): path to open the setting and store the results
+        solidusT (list): list of solidius T
+        liquidusT (list): list of liquidius T
+        coord (list): list of coordation 
+        xComp (str): name for x label
+        yComp (str): name for y label
+        solidCriterion (float, optional): Defaults to 0.001.
+
+    Returns:
+        TIF: store the reusults as TIF files
+    """
     print('####################################################################')
     print('Plotting Scheil-Eq Temperature Map')
     dotSize = 12
@@ -377,6 +474,19 @@ def plotScheilTemperature(path,solidusT,liquidusT,coord,xComp,yComp,solidCriteri
     return None
 
 def plotScheilPhase(path, finalScheilResults,allowedPhases, coord,xComp,yComp):
+    """plot different phases from scheil simulations
+
+    Args:
+        path (str): path to open the setting and store the results
+        finalScheilResults (dict): dict of scheil results
+        allowedPhases (list): list of allowed phases
+        coord (list): list of coordation 
+        xComp (str): name for x label
+        yComp (str): name for y label
+
+    Returns:
+        TIF: store the reusults as TIF files
+    """
     print('####################################################################')
     print('Plotting Scheil Phase Heat Map')
     phase_data = finalScheilResults
@@ -433,6 +543,15 @@ def plotScheilPhase(path, finalScheilResults,allowedPhases, coord,xComp,yComp):
 
 #######################################cracking criteria########################
 def getIntegral(temperature, solidFraction):
+    """combine temperature and solid phase
+
+    Args:
+        temperature (list): list of temperature
+        solidCriterion (float, optional): Defaults to 0.001.
+
+    Returns:
+        dict: combined results of T and phase fraction
+    """
     result = 0
     if len(temperature) > 3:
         for i in range(len(temperature)):
@@ -446,8 +565,21 @@ def getIntegral(temperature, solidFraction):
     return result
 
 def getCriteria(ScheilResult,solidusT,liquidusT,numDataThreshold = 10,CSCPoints = [0.4,0.9,0.99], KouPoints = [0.93,0.98], CDPoints = [0.7,0.98]):
-    #optinal paramater: numDataThreshold for the minimum number of data points for the calculation of the criterion, default value is 10
-    #optinal parameters: CSCPoints, KouPoints, CDPoints for CSC, Kou, (sRDG, iCSC) seperately, changing the boundary values for corresponding criterion
+    """get different criteria from scheil results
+
+    Args:
+        ScheilResult (dict): dict of scheil results 
+        solidusT (list): list of solidius T
+        liquidusT (list): list of liquidius T
+        numDataThreshold (int, optional): min data for crack criteria. Defaults to 10.
+        CSCPoints (list, optional): settng for CSC criteria. Defaults to [0.4,0.9,0.99].
+        KouPoints (list, optional): settng for Kou criteria. Defaults to [0.93,0.98].
+        CDPoints (list, optional): settng for CD criteria. Defaults to [0.7,0.98].
+
+    Returns:
+        set: lists of different results crack criteria 
+    """
+
     numFile = len([item for item in ScheilResult.keys()])
     solidFraction = []
     temperature = []
@@ -584,6 +716,22 @@ def getCriteria(ScheilResult,solidusT,liquidusT,numDataThreshold = 10,CSCPoints 
     #CD1: sRDG, CD2: iCSC
 
 def plotHotTearingSusceptibilityMap(path, coord, xComp, yComp, FR, CSC, Kou, iCSC, sRDG):
+    """plot the hot crack susceptibility map
+
+    Args:
+        path (str): path to open the setting and store the results
+        coord (list): list of coordation 
+        xComp (str): name for x label
+        yComp (str): name for y label
+        FR (list): list of values of FR from scheil results
+        CSC (list): list of values of CSC from scheil results
+        Kou (list): list of values of Kou from scheil results
+        iCSC (list): list of values of iCSC from scheil results
+        sRDG (list): list of values of sRDG from scheil results
+
+    Returns:
+        TIF: store the crack reusults as TIF files
+    """
     dotSize = 5
     print('##############################################################')
     print('Plotting Hot Tearing Susceptibility Map...')

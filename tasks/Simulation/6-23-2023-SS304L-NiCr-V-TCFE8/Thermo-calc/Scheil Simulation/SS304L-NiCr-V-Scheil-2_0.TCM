@@ -1,0 +1,9106 @@
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+2.42
+CR
+1.46
+FE
+3.437
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+80_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+80_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+80_solid_wt%
+s-d-a y BL
+plot
+m-e
+80_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+80_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+2.186
+CR
+0.974
+FE
+1.718
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+81_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+81_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+81_solid_wt%
+s-d-a y BL
+plot
+m-e
+81_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+81_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.811
+CR
+19.455
+V
+2.439
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+84_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+84_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+84_solid_wt%
+s-d-a y BL
+plot
+m-e
+84_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+84_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.576
+CR
+18.969
+V
+4.878
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+85_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+85_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+85_solid_wt%
+s-d-a y BL
+plot
+m-e
+85_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+85_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.342
+CR
+18.483
+V
+7.317
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+86_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+86_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+86_solid_wt%
+s-d-a y BL
+plot
+m-e
+86_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+86_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.107
+CR
+17.996
+V
+9.756
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+87_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+87_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+87_solid_wt%
+s-d-a y BL
+plot
+m-e
+87_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+87_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.873
+CR
+17.51
+V
+12.195
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+88_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+88_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+88_solid_wt%
+s-d-a y BL
+plot
+m-e
+88_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+88_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.638
+CR
+17.024
+V
+14.634
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+89_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+89_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+89_solid_wt%
+s-d-a y BL
+plot
+m-e
+89_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+89_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.404
+CR
+16.537
+V
+17.073
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+90_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+90_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+90_solid_wt%
+s-d-a y BL
+plot
+m-e
+90_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+90_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.17
+CR
+16.051
+V
+19.512
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+91_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+91_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+91_solid_wt%
+s-d-a y BL
+plot
+m-e
+91_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+91_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+10.935
+CR
+15.565
+V
+21.951
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+92_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+92_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+92_solid_wt%
+s-d-a y BL
+plot
+m-e
+92_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+92_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+10.701
+CR
+15.079
+V
+24.39
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+93_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+93_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+93_solid_wt%
+s-d-a y BL
+plot
+m-e
+93_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+93_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+10.466
+CR
+14.592
+V
+26.829
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+94_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+94_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+94_solid_wt%
+s-d-a y BL
+plot
+m-e
+94_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+94_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+10.232
+CR
+14.106
+V
+29.268
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+95_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+95_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+95_solid_wt%
+s-d-a y BL
+plot
+m-e
+95_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+95_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+9.998
+CR
+13.62
+V
+31.707
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+96_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+96_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+96_solid_wt%
+s-d-a y BL
+plot
+m-e
+96_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+96_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+9.763
+CR
+13.133
+V
+34.146
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+97_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+97_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+97_solid_wt%
+s-d-a y BL
+plot
+m-e
+97_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+97_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+9.529
+CR
+12.647
+V
+36.585
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+98_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+98_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+98_solid_wt%
+s-d-a y BL
+plot
+m-e
+98_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+98_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+9.294
+CR
+12.161
+V
+39.024
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+99_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+99_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+99_solid_wt%
+s-d-a y BL
+plot
+m-e
+99_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+99_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.06
+CR
+11.674
+FE
+37.802
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+100_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+100_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+100_solid_wt%
+s-d-a y BL
+plot
+m-e
+100_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+100_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.825
+CR
+11.188
+FE
+36.084
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+101_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+101_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+101_solid_wt%
+s-d-a y BL
+plot
+m-e
+101_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+101_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.591
+CR
+10.702
+FE
+34.366
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+102_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+102_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+102_solid_wt%
+s-d-a y BL
+plot
+m-e
+102_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+102_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.357
+CR
+10.215
+FE
+32.648
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+103_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+103_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+103_solid_wt%
+s-d-a y BL
+plot
+m-e
+103_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+103_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.122
+CR
+9.729
+FE
+30.929
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+104_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+104_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+104_solid_wt%
+s-d-a y BL
+plot
+m-e
+104_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+104_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.888
+CR
+9.243
+FE
+29.211
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+105_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+105_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+105_solid_wt%
+s-d-a y BL
+plot
+m-e
+105_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+105_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.653
+CR
+8.757
+FE
+27.493
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+106_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+106_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+106_solid_wt%
+s-d-a y BL
+plot
+m-e
+106_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+106_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.419
+CR
+8.27
+FE
+25.774
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+107_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+107_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+107_solid_wt%
+s-d-a y BL
+plot
+m-e
+107_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+107_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.184
+CR
+7.784
+FE
+24.056
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+108_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+108_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+108_solid_wt%
+s-d-a y BL
+plot
+m-e
+108_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+108_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.95
+CR
+7.298
+FE
+22.338
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+109_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+109_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+109_solid_wt%
+s-d-a y BL
+plot
+m-e
+109_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+109_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.716
+CR
+6.811
+FE
+20.619
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+110_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+110_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+110_solid_wt%
+s-d-a y BL
+plot
+m-e
+110_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+110_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.481
+CR
+6.325
+FE
+18.901
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+111_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+111_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+111_solid_wt%
+s-d-a y BL
+plot
+m-e
+111_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+111_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.247
+CR
+5.839
+FE
+17.183
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+112_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+112_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+112_solid_wt%
+s-d-a y BL
+plot
+m-e
+112_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+112_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.012
+CR
+5.352
+FE
+15.465
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+113_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+113_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+113_solid_wt%
+s-d-a y BL
+plot
+m-e
+113_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+113_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+5.778
+CR
+4.866
+FE
+13.746
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+114_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+114_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+114_solid_wt%
+s-d-a y BL
+plot
+m-e
+114_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+114_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+5.543
+CR
+4.38
+FE
+12.028
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+115_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+115_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+115_solid_wt%
+s-d-a y BL
+plot
+m-e
+115_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+115_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+5.309
+CR
+3.893
+FE
+10.31
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+116_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+116_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+116_solid_wt%
+s-d-a y BL
+plot
+m-e
+116_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+116_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+5.075
+CR
+3.407
+FE
+8.591
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+117_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+117_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+117_solid_wt%
+s-d-a y BL
+plot
+m-e
+117_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+117_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+4.84
+CR
+2.921
+FE
+6.873
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+118_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+118_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+118_solid_wt%
+s-d-a y BL
+plot
+m-e
+118_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+118_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+4.606
+CR
+2.435
+FE
+5.155
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+119_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+119_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+119_solid_wt%
+s-d-a y BL
+plot
+m-e
+119_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+119_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+4.371
+CR
+1.948
+FE
+3.437
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+120_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+120_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+120_solid_wt%
+s-d-a y BL
+plot
+m-e
+120_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+120_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+4.137
+CR
+1.462
+FE
+1.718
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+121_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+121_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+121_solid_wt%
+s-d-a y BL
+plot
+m-e
+121_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+121_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.527
+CR
+19.457
+V
+2.439
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+124_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+124_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+124_solid_wt%
+s-d-a y BL
+plot
+m-e
+124_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+124_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.293
+CR
+18.971
+V
+4.878
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+125_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+125_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+125_solid_wt%
+s-d-a y BL
+plot
+m-e
+125_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+125_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.059
+CR
+18.484
+V
+7.317
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+126_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+126_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+126_solid_wt%
+s-d-a y BL
+plot
+m-e
+126_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+126_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.824
+CR
+17.998
+V
+9.756
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+127_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+127_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+127_solid_wt%
+s-d-a y BL
+plot
+m-e
+127_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+127_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.59
+CR
+17.512
+V
+12.195
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+128_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+128_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+128_solid_wt%
+s-d-a y BL
+plot
+m-e
+128_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+128_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.355
+CR
+17.025
+V
+14.634
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+129_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+129_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+129_solid_wt%
+s-d-a y BL
+plot
+m-e
+129_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+129_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.121
+CR
+16.539
+V
+17.073
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+130_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+130_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+130_solid_wt%
+s-d-a y BL
+plot
+m-e
+130_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+130_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.886
+CR
+16.053
+V
+19.512
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+131_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+131_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+131_solid_wt%
+s-d-a y BL
+plot
+m-e
+131_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+131_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.652
+CR
+15.566
+V
+21.951
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+132_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+132_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+132_solid_wt%
+s-d-a y BL
+plot
+m-e
+132_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+132_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.418
+CR
+15.08
+V
+24.39
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+133_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+133_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+133_solid_wt%
+s-d-a y BL
+plot
+m-e
+133_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+133_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.183
+CR
+14.594
+V
+26.829
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+134_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+134_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+134_solid_wt%
+s-d-a y BL
+plot
+m-e
+134_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+134_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.949
+CR
+14.107
+V
+29.268
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+135_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+135_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+135_solid_wt%
+s-d-a y BL
+plot
+m-e
+135_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+135_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.714
+CR
+13.621
+V
+31.707
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+136_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+136_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+136_solid_wt%
+s-d-a y BL
+plot
+m-e
+136_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+136_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.48
+CR
+13.135
+V
+34.146
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+137_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+137_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+137_solid_wt%
+s-d-a y BL
+plot
+m-e
+137_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+137_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+11.245
+CR
+12.649
+V
+36.585
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+138_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+138_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+138_solid_wt%
+s-d-a y BL
+plot
+m-e
+138_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+138_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.011
+CR
+12.162
+FE
+37.802
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+139_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+139_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+139_solid_wt%
+s-d-a y BL
+plot
+m-e
+139_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+139_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.777
+CR
+11.676
+FE
+36.084
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+140_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+140_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+140_solid_wt%
+s-d-a y BL
+plot
+m-e
+140_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+140_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.542
+CR
+11.19
+FE
+34.366
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+141_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+141_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+141_solid_wt%
+s-d-a y BL
+plot
+m-e
+141_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+141_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.308
+CR
+10.703
+FE
+32.648
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+142_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+142_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+142_solid_wt%
+s-d-a y BL
+plot
+m-e
+142_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+142_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.073
+CR
+10.217
+FE
+30.929
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+143_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+143_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+143_solid_wt%
+s-d-a y BL
+plot
+m-e
+143_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+143_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.839
+CR
+9.731
+FE
+29.211
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+144_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+144_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+144_solid_wt%
+s-d-a y BL
+plot
+m-e
+144_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+144_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.604
+CR
+9.244
+FE
+27.493
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+145_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+145_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+145_solid_wt%
+s-d-a y BL
+plot
+m-e
+145_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+145_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.37
+CR
+8.758
+FE
+25.774
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+146_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+146_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+146_solid_wt%
+s-d-a y BL
+plot
+m-e
+146_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+146_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.136
+CR
+8.272
+FE
+24.056
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+147_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+147_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+147_solid_wt%
+s-d-a y BL
+plot
+m-e
+147_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+147_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.901
+CR
+7.785
+FE
+22.338
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+148_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+148_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+148_solid_wt%
+s-d-a y BL
+plot
+m-e
+148_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+148_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.667
+CR
+7.299
+FE
+20.619
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+149_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+149_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+149_solid_wt%
+s-d-a y BL
+plot
+m-e
+149_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+149_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.432
+CR
+6.813
+FE
+18.901
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+150_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+150_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+150_solid_wt%
+s-d-a y BL
+plot
+m-e
+150_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+150_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.198
+CR
+6.327
+FE
+17.183
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+151_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+151_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+151_solid_wt%
+s-d-a y BL
+plot
+m-e
+151_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+151_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.963
+CR
+5.84
+FE
+15.465
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+152_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+152_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+152_solid_wt%
+s-d-a y BL
+plot
+m-e
+152_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+152_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.729
+CR
+5.354
+FE
+13.746
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+153_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+153_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+153_solid_wt%
+s-d-a y BL
+plot
+m-e
+153_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+153_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.495
+CR
+4.868
+FE
+12.028
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+154_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+154_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+154_solid_wt%
+s-d-a y BL
+plot
+m-e
+154_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+154_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.26
+CR
+4.381
+FE
+10.31
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+155_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+155_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+155_solid_wt%
+s-d-a y BL
+plot
+m-e
+155_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+155_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+7.026
+CR
+3.895
+FE
+8.591
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+156_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+156_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+156_solid_wt%
+s-d-a y BL
+plot
+m-e
+156_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+156_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.791
+CR
+3.409
+FE
+6.873
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+157_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+157_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+157_solid_wt%
+s-d-a y BL
+plot
+m-e
+157_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+157_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.557
+CR
+2.922
+FE
+5.155
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+158_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+158_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+158_solid_wt%
+s-d-a y BL
+plot
+m-e
+158_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+158_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.323
+CR
+2.436
+FE
+3.437
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+159_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+159_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+159_solid_wt%
+s-d-a y BL
+plot
+m-e
+159_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+159_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+6.088
+CR
+1.95
+FE
+1.718
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+160_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+160_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+160_solid_wt%
+s-d-a y BL
+plot
+m-e
+160_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+160_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+16.244
+CR
+19.458
+V
+2.439
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+163_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+163_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+163_solid_wt%
+s-d-a y BL
+plot
+m-e
+163_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+163_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+16.01
+CR
+18.972
+V
+4.878
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+164_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+164_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+164_solid_wt%
+s-d-a y BL
+plot
+m-e
+164_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+164_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.775
+CR
+18.486
+V
+7.317
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+165_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+165_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+165_solid_wt%
+s-d-a y BL
+plot
+m-e
+165_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+165_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.541
+CR
+17.999
+V
+9.756
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+166_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+166_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+166_solid_wt%
+s-d-a y BL
+plot
+m-e
+166_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+166_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.306
+CR
+17.513
+V
+12.195
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+167_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+167_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+167_solid_wt%
+s-d-a y BL
+plot
+m-e
+167_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+167_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.072
+CR
+17.027
+V
+14.634
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+168_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+168_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+168_solid_wt%
+s-d-a y BL
+plot
+m-e
+168_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+168_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.838
+CR
+16.54
+V
+17.073
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+169_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+169_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+169_solid_wt%
+s-d-a y BL
+plot
+m-e
+169_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+169_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.603
+CR
+16.054
+V
+19.512
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+170_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+170_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+170_solid_wt%
+s-d-a y BL
+plot
+m-e
+170_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+170_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.369
+CR
+15.568
+V
+21.951
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+171_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+171_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+171_solid_wt%
+s-d-a y BL
+plot
+m-e
+171_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+171_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.134
+CR
+15.082
+V
+24.39
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+172_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+172_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+172_solid_wt%
+s-d-a y BL
+plot
+m-e
+172_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+172_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.9
+CR
+14.595
+V
+26.829
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+173_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+173_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+173_solid_wt%
+s-d-a y BL
+plot
+m-e
+173_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+173_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.666
+CR
+14.109
+V
+29.268
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+174_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+174_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+174_solid_wt%
+s-d-a y BL
+plot
+m-e
+174_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+174_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.431
+CR
+13.623
+V
+31.707
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+175_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+175_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+175_solid_wt%
+s-d-a y BL
+plot
+m-e
+175_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+175_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+13.197
+CR
+13.136
+V
+34.146
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+176_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+176_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+176_solid_wt%
+s-d-a y BL
+plot
+m-e
+176_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+176_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+12.962
+CR
+12.65
+V
+36.585
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+177_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+177_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+177_solid_wt%
+s-d-a y BL
+plot
+m-e
+177_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+177_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.728
+CR
+12.164
+FE
+36.084
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+178_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+178_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+178_solid_wt%
+s-d-a y BL
+plot
+m-e
+178_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+178_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.493
+CR
+11.677
+FE
+34.366
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+179_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+179_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+179_solid_wt%
+s-d-a y BL
+plot
+m-e
+179_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+179_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.259
+CR
+11.191
+FE
+32.648
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+180_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+180_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+180_solid_wt%
+s-d-a y BL
+plot
+m-e
+180_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+180_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.025
+CR
+10.705
+FE
+30.929
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+181_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+181_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+181_solid_wt%
+s-d-a y BL
+plot
+m-e
+181_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+181_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.79
+CR
+10.218
+FE
+29.211
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+182_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+182_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+182_solid_wt%
+s-d-a y BL
+plot
+m-e
+182_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+182_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.556
+CR
+9.732
+FE
+27.493
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+183_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+183_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+183_solid_wt%
+s-d-a y BL
+plot
+m-e
+183_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+183_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.321
+CR
+9.246
+FE
+25.774
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+184_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+184_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+184_solid_wt%
+s-d-a y BL
+plot
+m-e
+184_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+184_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.087
+CR
+8.76
+FE
+24.056
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+185_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+185_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+185_solid_wt%
+s-d-a y BL
+plot
+m-e
+185_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+185_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.852
+CR
+8.273
+FE
+22.338
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+186_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+186_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+186_solid_wt%
+s-d-a y BL
+plot
+m-e
+186_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+186_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.618
+CR
+7.787
+FE
+20.619
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+187_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+187_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+187_solid_wt%
+s-d-a y BL
+plot
+m-e
+187_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+187_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.384
+CR
+7.301
+FE
+18.901
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+188_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+188_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+188_solid_wt%
+s-d-a y BL
+plot
+m-e
+188_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+188_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.149
+CR
+6.814
+FE
+17.183
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+189_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+189_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+189_solid_wt%
+s-d-a y BL
+plot
+m-e
+189_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+189_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.915
+CR
+6.328
+FE
+15.465
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+190_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+190_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+190_solid_wt%
+s-d-a y BL
+plot
+m-e
+190_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+190_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.68
+CR
+5.842
+FE
+13.746
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+191_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+191_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+191_solid_wt%
+s-d-a y BL
+plot
+m-e
+191_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+191_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.446
+CR
+5.355
+FE
+12.028
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+192_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+192_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+192_solid_wt%
+s-d-a y BL
+plot
+m-e
+192_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+192_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.211
+CR
+4.869
+FE
+10.31
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+193_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+193_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+193_solid_wt%
+s-d-a y BL
+plot
+m-e
+193_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+193_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.977
+CR
+4.383
+FE
+8.591
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+194_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+194_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+194_solid_wt%
+s-d-a y BL
+plot
+m-e
+194_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+194_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.743
+CR
+3.896
+FE
+6.873
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+195_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+195_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+195_solid_wt%
+s-d-a y BL
+plot
+m-e
+195_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+195_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.508
+CR
+3.41
+FE
+5.155
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+196_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+196_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+196_solid_wt%
+s-d-a y BL
+plot
+m-e
+196_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+196_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.274
+CR
+2.924
+FE
+3.437
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+197_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+197_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+197_solid_wt%
+s-d-a y BL
+plot
+m-e
+197_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+197_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+8.039
+CR
+2.438
+FE
+1.718
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+198_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+198_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+198_solid_wt%
+s-d-a y BL
+plot
+m-e
+198_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+198_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+17.961
+CR
+19.46
+V
+2.439
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+201_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+201_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+201_solid_wt%
+s-d-a y BL
+plot
+m-e
+201_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+201_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+17.727
+CR
+18.974
+V
+4.878
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+202_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+202_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+202_solid_wt%
+s-d-a y BL
+plot
+m-e
+202_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+202_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+17.492
+CR
+18.487
+V
+7.317
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+203_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+203_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+203_solid_wt%
+s-d-a y BL
+plot
+m-e
+203_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+203_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+17.258
+CR
+18.001
+V
+9.756
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+204_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+204_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+204_solid_wt%
+s-d-a y BL
+plot
+m-e
+204_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+204_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+17.023
+CR
+17.515
+V
+12.195
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+205_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+205_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+205_solid_wt%
+s-d-a y BL
+plot
+m-e
+205_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+205_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+16.789
+CR
+17.028
+V
+14.634
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+206_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+206_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+206_solid_wt%
+s-d-a y BL
+plot
+m-e
+206_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+206_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+16.554
+CR
+16.542
+V
+17.073
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+207_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+207_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+207_solid_wt%
+s-d-a y BL
+plot
+m-e
+207_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+207_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+16.32
+CR
+16.056
+V
+19.512
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+208_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+208_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+208_solid_wt%
+s-d-a y BL
+plot
+m-e
+208_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+208_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+16.086
+CR
+15.569
+V
+21.951
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+209_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+209_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+209_solid_wt%
+s-d-a y BL
+plot
+m-e
+209_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+209_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.851
+CR
+15.083
+V
+24.39
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+210_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+210_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+210_solid_wt%
+s-d-a y BL
+plot
+m-e
+210_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+210_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.617
+CR
+14.597
+V
+26.829
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+211_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+211_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+211_solid_wt%
+s-d-a y BL
+plot
+m-e
+211_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+211_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.382
+CR
+14.11
+V
+29.268
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+212_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+212_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+212_solid_wt%
+s-d-a y BL
+plot
+m-e
+212_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+212_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+15.148
+CR
+13.624
+V
+31.707
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+213_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+213_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+213_solid_wt%
+s-d-a y BL
+plot
+m-e
+213_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+213_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+14.913
+CR
+13.138
+V
+34.146
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+214_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+214_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+214_solid_wt%
+s-d-a y BL
+plot
+m-e
+214_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+214_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+14.679
+CR
+12.652
+FE
+36.084
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+215_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+215_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+215_solid_wt%
+s-d-a y BL
+plot
+m-e
+215_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+215_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+14.445
+CR
+12.165
+FE
+34.366
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+216_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+216_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+216_solid_wt%
+s-d-a y BL
+plot
+m-e
+216_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+216_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+14.21
+CR
+11.679
+FE
+32.648
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+217_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+217_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+217_solid_wt%
+s-d-a y BL
+plot
+m-e
+217_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+217_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+13.976
+CR
+11.193
+FE
+30.929
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+218_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+218_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+218_solid_wt%
+s-d-a y BL
+plot
+m-e
+218_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+218_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+13.741
+CR
+10.706
+FE
+29.211
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+219_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+219_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+219_solid_wt%
+s-d-a y BL
+plot
+m-e
+219_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+219_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+13.507
+CR
+10.22
+FE
+27.493
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+220_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+220_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+220_solid_wt%
+s-d-a y BL
+plot
+m-e
+220_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+220_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+13.272
+CR
+9.734
+FE
+25.774
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+221_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+221_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+221_solid_wt%
+s-d-a y BL
+plot
+m-e
+221_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+221_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+13.038
+CR
+9.247
+FE
+24.056
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+222_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+222_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+222_solid_wt%
+s-d-a y BL
+plot
+m-e
+222_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+222_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.804
+CR
+8.761
+FE
+22.338
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+223_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+223_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+223_solid_wt%
+s-d-a y BL
+plot
+m-e
+223_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+223_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.569
+CR
+8.275
+FE
+20.619
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+224_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+224_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+224_solid_wt%
+s-d-a y BL
+plot
+m-e
+224_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+224_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.335
+CR
+7.788
+FE
+18.901
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+225_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+225_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+225_solid_wt%
+s-d-a y BL
+plot
+m-e
+225_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+225_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+12.1
+CR
+7.302
+FE
+17.183
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+226_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+226_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+226_solid_wt%
+s-d-a y BL
+plot
+m-e
+226_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+226_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.866
+CR
+6.816
+FE
+15.465
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+227_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+227_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+227_solid_wt%
+s-d-a y BL
+plot
+m-e
+227_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+227_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.632
+CR
+6.329
+FE
+13.746
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+228_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+228_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+228_solid_wt%
+s-d-a y BL
+plot
+m-e
+228_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+228_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.397
+CR
+5.843
+FE
+12.028
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+229_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+229_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+229_solid_wt%
+s-d-a y BL
+plot
+m-e
+229_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+229_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+11.163
+CR
+5.357
+FE
+10.31
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+230_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+230_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+230_solid_wt%
+s-d-a y BL
+plot
+m-e
+230_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+230_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.928
+CR
+4.871
+FE
+8.591
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+231_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+231_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+231_solid_wt%
+s-d-a y BL
+plot
+m-e
+231_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+231_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.694
+CR
+4.384
+FE
+6.873
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+232_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+232_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+232_solid_wt%
+s-d-a y BL
+plot
+m-e
+232_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+232_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.459
+CR
+3.898
+FE
+5.155
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+233_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+233_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+233_solid_wt%
+s-d-a y BL
+plot
+m-e
+233_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+233_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+10.225
+CR
+3.412
+FE
+3.437
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+234_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+234_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+234_solid_wt%
+s-d-a y BL
+plot
+m-e
+234_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+234_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+V
+y
+NI
+9.991
+CR
+2.925
+FE
+1.718
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+235_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+235_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+235_solid_wt%
+s-d-a y BL
+plot
+m-e
+235_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+235_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+19.678
+CR
+19.461
+V
+2.439
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+238_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+238_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+238_solid_wt%
+s-d-a y BL
+plot
+m-e
+238_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+238_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+19.443
+CR
+18.975
+V
+4.878
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+239_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+239_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+239_solid_wt%
+s-d-a y BL
+plot
+m-e
+239_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+239_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+19.209
+CR
+18.489
+V
+7.317
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+240_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+240_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+240_solid_wt%
+s-d-a y BL
+plot
+m-e
+240_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+240_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+18.975
+CR
+18.002
+V
+9.756
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+241_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+241_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+241_solid_wt%
+s-d-a y BL
+plot
+m-e
+241_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+241_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+18.74
+CR
+17.516
+V
+12.195
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+242_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+242_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+242_solid_wt%
+s-d-a y BL
+plot
+m-e
+242_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+242_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+18.506
+CR
+17.03
+V
+14.634
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+243_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+243_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+243_solid_wt%
+s-d-a y BL
+plot
+m-e
+243_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+243_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+18.271
+CR
+16.543
+V
+17.073
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+244_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+244_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+244_solid_wt%
+s-d-a y BL
+plot
+m-e
+244_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+244_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+18.037
+CR
+16.057
+V
+19.512
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+245_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+245_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+245_solid_wt%
+s-d-a y BL
+plot
+m-e
+245_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+245_composition_wt%
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+1000
+
+
+
+TEMPERATURE-STEP
+1
+START-WIZARD
+TCFE8
+FE
+y
+NI
+17.802
+CR
+15.571
+V
+21.951
+
+2000
+DICTRA_FCC_A1
+NONE
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+246_liquid_mol%
+s-d-a y NS(*)
+plot
+m-e
+246_solid_mol%
+s-d-a y BS(*)
+plot
+m-e
+246_solid_wt%
+s-d-a y BL
+plot
+m-e
+246_liquid_wt%
+s-d-a y W(*,*)
+
+plot
+m-e
+246_composition_wt%
+back
+back

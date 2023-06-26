@@ -1,0 +1,41 @@
+@@ 0th simulation, 100.0% ##############################
+set-echo
+
+go data
+FEDEMO
+def-sys FE 
+get
+go p-3
+reinit
+s-c P=101325 T=2203.15
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 1598.15 2203.15
+5
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+0_mole.exp
+tabulate
+PhaseWt
+0_wt.exp
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back

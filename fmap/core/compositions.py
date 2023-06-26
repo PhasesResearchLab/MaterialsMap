@@ -10,6 +10,15 @@ from tqdm import tqdm
 from fmap.ref_data import relatedEle
 
 def generateCompositions(indep_comps,ngridpts):
+    """Generate composition list based on the independetn components and grid density
+
+    Args:
+        indep_comps (list): List of independet components 
+        ngridpts (int): Int of the grids
+
+    Returns:
+        list: List combinations of independent components
+    """
     axisList = [item for item in np.arange(0,1+1/ngridpts, 1/ngridpts)]
     comps = []
     for x in axisList:
@@ -19,6 +28,17 @@ def generateCompositions(indep_comps,ngridpts):
     return comps
 
 def getCompostion(indep_comps,alloyCompostion,comps,materials_update): # get element composition from alloy composition
+    """transfer the independent components to the list of independent elements
+
+    Args:
+        indep_comps (list): List of independet components 
+        alloyCompostion (str): str of alloy part in the components
+        comps (list): List combinations of independent components
+        materials_update (dict): Dicts that contains the compositions of each compotents
+
+    Returns:
+        dict: dict of compostion with key as element
+    """
     wtPercent = alloyCompostion
     totalAlloy = 0
     restAlloy = ''
@@ -45,6 +65,22 @@ def getCompostion(indep_comps,alloyCompostion,comps,materials_update): # get ele
     return composition
 
 def createComposition(indep_comps,comps,compositions_list,materials_update,path): #create compositions
+    """Create a compositions list of element based on the input of components
+
+    Args:
+        indep_comps (list): List of independet components 
+        comps (list): List of all components 
+        compositions_list (list): List combinations of independent components
+        materials_update (dict): Dicts that contains the compositions of each compotents
+        path (str): path to store the results
+
+    Returns:
+        set: 
+        Compositions(list): List combinations of independent elements
+        numPoint(int): Number of calculations in each tcm files
+        comp(list): the related element
+        newCompositions(int): the length of the generate composition list
+    """
     Compositions = dict()
     index = 0
     for num, alloys in enumerate(compositions_list): 

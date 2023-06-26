@@ -25,22 +25,22 @@ A simulation tool using `pycalphad`_ and Thermo_Calc.
     from fmap.plot.FeasibilityMap import plotMaps
 
     # Create Compositions
-    comps = ['Cu','Ag', 'Al']
-    ngridpts = 10  # number of points along each dimension of the composition grid
-    TemperatureRange = (600, 2000,10) #(lower limit, upper limit, temperature step)
+    comps = ['SS304L','NiCr','V']
+    eleAmountType = 'massFraction'
+    pressure = 101325
+    ngridpts = 41  # number of points along each dimension of the composition grid
+    TemperatureRange = (900, 2300,10) #(lower limit, upper limit, temperature step)
     indep_comps = [comps[1], comps[2]]  # choose them automatically
     for i in comps:
         if i in periodic_table:
             materials[i] = {i:1}
         elif i not in materials.keys():
-            # the composition of this element/alloys(in weight fractions)
-            materials[i] = {'SS304L':{'Ni':0.09611451943, 'Cr':0.1993865031, 'Fe':0.7044989775}}
-        
+            materials['SS304L'] = {'Ni':0.09611451943, 'Cr':0.1993865031, 'Fe':0.7044989775}         # the composition of this element/alloys(in weight fractions)
     maxNumSim = 250  # maximum number of simulations in each TCM file
 
     # Equilibrium simulation settings
     pressure = 101325
-    database = 'Ag-Al-Cu.TDB' # <userDatabase>.TDB or TCFE8
+    database = 'TCFE8' # <userDatabase>.TDB or TCFE8
     eleAmountType = 'massFraction' # Candidates: massFraction massPercent moleFraction molePercent
     output_Eq = f'{TemperatureRange[0]}-{TemperatureRange[1]}-{TemperatureRange[2]}-{comps[0]}-{comps[1]}-{comps[2]}-Eq'
 
