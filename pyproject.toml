@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fmat"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="Hui Sun", email="HuiSun@psu.edu" },
 ]
@@ -29,7 +29,7 @@ dependencies = [
     "pycalphad<=0.9.2",
     "pandas>=2.0.2",
     "tqdm>=4.65.0",
-    "scheil>=0.1.6",
+    "scheil@git+https://github.com/HUISUN24/scheil.git#egg=main",
     "scikit-learn>=0.24.1",
     "openpyxl>=3.1.2",
 ]
