@@ -11,7 +11,7 @@ authors = [
 classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
-    "Development Status :: 4 - Beta",
+    "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
@@ -19,7 +19,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Chemistry",
     "Topic :: Scientific/Engineering :: Physics",
 ]
-description = "feasibility map for materials design"
+description = "Feasibility MAP for materials design"
 readme = "README.md"
 
 requires-python = ">=3.9"
@@ -35,4 +35,4 @@ dependencies = [
 ]
 
 [project.urls]
-"Bug Tracker" = "https://github.com/PhasesResearchLab/pySIPFENN/issues"
+"Bug Tracker" = "https://github.com/HUISUN24/feasibility_map/issues"
