@@ -81,9 +81,9 @@ A simulation tool using `pycalphad`_ and Thermo_Calc.
     # Plot deleterious phase diagram and crack susceptibility map 
     plotMaps(path,'pycalphad')
 
-.. image:: https://raw.githubusercontent.com/pycalphad/scheil/master/docs/_static/Al-30Zn_Scheil_simulation.png
+.. image:: https://github.com/HUISUN24/feasibility_map/blob/main/docs/demo-results.png
     :align: center
-    :alt: Phase fraction evolution during a Scheil simulation of Al-30Zn
+    :alt: results of SS04L-NiCr-V
 
 Installation
 ============
