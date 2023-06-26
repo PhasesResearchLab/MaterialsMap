@@ -115,7 +115,7 @@ To install an editable development version with pip:
 
     git clone https://github.com/HUISUN24/feasibility_map.git
     cd feasibility_map
-    pip install --editable .[dev]
+    pip install -e .
 
 Upgrading scheil later requires you to run ``git pull`` in this directory.
 
