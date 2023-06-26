@@ -119,6 +119,17 @@ To install an editable development version with pip:
 
 Upgrading scheil later requires you to run ``git pull`` in this directory.
 
+Install fix scheil
+--------------------
+
+One of the dependency need fix by cloning from **GitHub**.
+
+.. code-block:: bash
+    
+    git clone https://github.com/HUISUN24/scheil.git
+    cd scheil
+    pip install -e .
+
 Run the automated tests using
 
 .. code-block:: bash
