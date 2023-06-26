@@ -21,7 +21,7 @@ classifiers = [
 description = "Feasibility MAP for materials design"
 readme = "README.md"
 
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 dependencies = [
     "matplotlib",
     "numpy<=1.22",
