@@ -95,14 +95,14 @@ feasibility map is suggested to be installed from PyPI.
 
 .. code-block:: bash
 
-    pip install feasibility_map
+    pip install fmat
 
 Anaconda
 --------
 
 .. code-block:: bash
 
-    conda install -c conda-forge feasibility_map
+    conda install -c conda-forge fmat
 
 Development versions
 --------------------
