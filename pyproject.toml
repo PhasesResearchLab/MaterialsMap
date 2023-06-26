@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fmat"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Hui Sun", email="HuiSun@psu.edu" },
 ]
@@ -21,7 +21,7 @@ classifiers = [
 description = "Feasibility MAP for materials design"
 readme = "README.md"
 
-requires-python = ">=3.8"
+requires-python = ">=3.8, <=3.9"
 dependencies = [
     "matplotlib",
     "numpy<=1.22",
