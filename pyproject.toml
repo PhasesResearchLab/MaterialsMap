@@ -24,8 +24,8 @@ readme = "README.md"
 
 requires-python = ">=3.9"
 dependencies = [
-    "matplotlib>=3.6.2",
-    "numpy<=1.20.3",
+    "matplotlib",
+    "numpy",
     "pycalphad<=0.9.2",
     "pandas>=2.0.2",
     "tqdm>=4.65.0",
