@@ -1,0 +1,68 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+fmat/ref_data.py
+fmat.egg-info/PKG-INFO
+fmat.egg-info/SOURCES.txt
+fmat.egg-info/dependency_links.txt
+fmat.egg-info/requires.txt
+fmat.egg-info/top_level.txt
+fmat/__pycache__/__init__.cpython-39.pyc
+fmat/__pycache__/ref_data.cpython-39.pyc
+fmat/core/GenerateEqScript.py
+fmat/core/GenerateScheilScript.py
+fmat/core/ReadEqResult.py
+fmat/core/ReadScheilResult.py
+fmat/core/__init__.py
+fmat/core/__init__.pyc
+fmat/core/compositions.py
+fmat/core/pycalphad_run.py
+fmat/core/__pycache__/GenerateEqScript.cpython-39.pyc
+fmat/core/__pycache__/GenerateScheilScript.cpython-39.pyc
+fmat/core/__pycache__/ReadEqResult.cpython-39.pyc
+fmat/core/__pycache__/ReadScheilResult.cpython-39.pyc
+fmat/core/__pycache__/__init__.cpython-39.pyc
+fmat/core/__pycache__/compositions.cpython-39.pyc
+fmat/core/__pycache__/pycalphad_run.cpython-39.pyc
+fmat/plot/FeasibilityMap.py
+fmat/plot/__init__.py
+fmat/plot/feasibility_helpers.py
+fmat/plot/__pycache__/FeasibilityMap.cpython-39.pyc
+fmat/plot/__pycache__/__init__.cpython-39.pyc
+fmat/plot/__pycache__/feasibility_helpers.cpython-39.pyc
+fmat/tests/__init__.py
+fmat/tests/test_compositions.py
+fmat/tests/test_plotting.py
+fmat/tests/test_pycalphad_run.py
+fmat/tests/test_thermo_calc_script.py
+fmat/tests/__pycache__/__init__.cpython-39.pyc
+fmat/tests/__pycache__/test_compositions.cpython-39-pytest-7.3.2.pyc
+fmat/tests/__pycache__/test_plotting.cpython-39-pytest-7.3.2.pyc
+fmat/tests/__pycache__/test_pycalphad_run.cpython-39-pytest-7.3.2.pyc
+fmat/tests/__pycache__/test_thermo_calc_script.cpython-39-pytest-7.3.2.pyc
+fmat/tests/testsCaseFiles/Ag-Al-Cu.TDB
+fmat/tests/testsCaseFiles/composition_for_feasibilityMap.xlsx
+fmat/tests/testsCaseFiles/setting.npy
+fmat/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_mole.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_wt.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/1_mole.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/1_wt.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_mole.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_wt.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_composition_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_liquid_mol%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_liquid_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_solid_mol%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_solid_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_composition_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_liquid_mol%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_liquid_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_solid_mol%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_solid_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_composition_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_liquid_mol%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_liquid_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_solid_mol%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_solid_wt%.exp
+fmat/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/Result/data.json
