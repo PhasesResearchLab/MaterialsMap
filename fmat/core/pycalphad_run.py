@@ -58,7 +58,7 @@ def pycalphad_eq(path):
         comp_list_mole = v.get_mole_fractions(comp_list,v.Species(indepcomp_list[n]),eleweight)
         if len(comp_list_mole) == 0:
             comp_list_mole[v.X(nocomp_list[0])]=1E-5
-        all_comp.append(nocomp_list[0])
+            all_comp.append(nocomp_list[0])
         all_comp_tot.append(all_comp)
         compositions_list.append(comp_list_mole)
 
@@ -151,7 +151,7 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
         comp_list_mole = v.get_mole_fractions(comp_list,v.Species(indepcomp_list[n]),eleweight)
         if len(comp_list_mole) == 0:
             comp_list_mole[v.X(nocomp_list[0])]=1E-5
-        all_comp.append(nocomp_list[0])
+            all_comp.append(nocomp_list[0])
         all_comp_tot.append(all_comp)
         compositions_list.append(comp_list_mole)
     LiquidusTemp = []
