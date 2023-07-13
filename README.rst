@@ -62,7 +62,7 @@ A simulation tool using `pycalphad`_ and Thermo_Calc.
     # Save compostion results
     compositions_list = generateCompositions(indep_comps, ngridpts)
     Compositions, numPoint, comp, numSimultion = createComposition(indep_comps, comps, compositions_list, materials, path)
-    settings = [TemperatureRange, numPoint, numSimultion, comp, comps, indep_comps, database, pressure, eleAmountType]
+    settings = [TemperatureRange, numPoint, numSimultion, comp, comps, indep_comps, os.path.abspath(database), pressure, eleAmountType]
     np.save(f'{path}/setting.npy', settings)
     
     # Running with PyCalphad
