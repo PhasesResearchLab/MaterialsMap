@@ -293,7 +293,7 @@ def plotMaps(path,engine,dynamicTRange = True, dynamicRatio = 2/3, ScheilThresho
     settings = getSettings(path)
     xComp = settings[2]
     yComp = settings[3]
-    comps = settings[4]
+    comps = settings[9]
     composition_data = settings[7]
     ###############################which source to use################################
     if engine.lower() == 'pycalphad':
