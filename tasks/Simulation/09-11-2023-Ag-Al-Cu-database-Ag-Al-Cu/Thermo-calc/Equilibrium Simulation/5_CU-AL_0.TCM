@@ -1,0 +1,1602 @@
+@@ 0th simulation, 2.5% ##############################
+set-echo
+
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.02439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/82_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/82_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 1th simulation, 5.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.04878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/122_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/122_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 2th simulation, 7.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.07317
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/161_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/161_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 3th simulation, 10.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.09756
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/199_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/199_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 4th simulation, 12.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.12195
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/236_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/236_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 5th simulation, 15.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.14634
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/272_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/272_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 6th simulation, 17.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.17073
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/307_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/307_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 7th simulation, 20.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.19512
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/341_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/341_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 8th simulation, 22.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.21951
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/374_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/374_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 9th simulation, 25.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.2439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/406_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/406_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 10th simulation, 27.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.26829
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/437_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/437_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 11th simulation, 30.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.29268
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/467_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/467_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 12th simulation, 32.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.31707
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/496_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/496_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 13th simulation, 35.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.34146
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/524_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/524_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 14th simulation, 37.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.36585
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/551_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/551_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 15th simulation, 40.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.39024
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/577_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/577_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 16th simulation, 42.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.41463
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/602_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/602_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 17th simulation, 45.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.43902
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/626_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/626_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 18th simulation, 47.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.46341
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/649_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/649_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 19th simulation, 50.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(AL) = 0.4878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/671_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/671_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 20th simulation, 52.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.4878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/692_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/692_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 21th simulation, 55.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.46341
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/712_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/712_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 22th simulation, 57.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.43902
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/731_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/731_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 23th simulation, 60.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.41463
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/749_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/749_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 24th simulation, 62.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.39024
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/766_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/766_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 25th simulation, 65.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.36585
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/782_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/782_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 26th simulation, 67.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.34146
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/797_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/797_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 27th simulation, 70.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.31707
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/811_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/811_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 28th simulation, 72.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.29268
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/824_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/824_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 29th simulation, 75.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.26829
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/836_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/836_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 30th simulation, 77.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.2439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/847_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/847_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 31th simulation, 80.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.21951
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/857_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/857_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 32th simulation, 82.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.19512
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/866_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/866_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 33th simulation, 85.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.17073
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/874_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/874_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 34th simulation, 87.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.14634
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/881_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/881_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 35th simulation, 90.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.12195
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/887_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/887_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 36th simulation, 92.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.09756
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/892_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/892_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 37th simulation, 95.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.07317
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/896_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/896_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 38th simulation, 97.5% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.04878
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/899_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/899_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back
+@@ 39th simulation, 100.0% ##############################
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU AL 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c W(CU) = 0.02439
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/901_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/901_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back

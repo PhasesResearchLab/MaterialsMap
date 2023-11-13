@@ -1,0 +1,26 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=20
+#PBS -l walltime=48:00:00
+#PBS -l pmem=10gb
+#PBS -A open
+#PBS -j oe
+#PBS -m n
+#
+#
+
+module load intel/2021.4.0
+module load impi/2021.4.0
+conda activate fmat
+
+echo " "
+echo "Job started on `hostname` at `date`"
+echo " "
+echo "Running program..."
+module purge
+python3 run.py 20
+
+echo " "
+echo "Job completed at `date`"
+echo " "
+diff=$SECONDS
+echo "$(($diff / 3600)) hours, $((($diff / 60) % 60)) minutes and $(($diff % 60)) seconds elapsed."

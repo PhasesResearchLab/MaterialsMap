@@ -1,0 +1,2240 @@
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+2.43902
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/42_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/42_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/42_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/42_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/42_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+4.87805
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/83_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/83_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/83_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/83_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/83_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+7.31707
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/123_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/123_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/123_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/123_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/123_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+9.7561
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/162_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/162_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/162_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/162_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/162_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+12.19512
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/200_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/200_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/200_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/200_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/200_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+14.63415
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/237_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/237_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/237_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/237_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/237_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+17.07317
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/273_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/273_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/273_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/273_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/273_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+19.5122
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/308_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/308_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/308_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/308_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/308_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+21.95122
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/342_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/342_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/342_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/342_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/342_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+24.39024
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/375_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/375_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/375_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/375_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/375_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+26.82927
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/407_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/407_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/407_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/407_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/407_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+29.26829
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/438_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/438_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/438_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/438_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/438_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+31.70732
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/468_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/468_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/468_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/468_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/468_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+34.14634
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/497_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/497_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/497_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/497_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/497_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+36.58537
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/525_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/525_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/525_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/525_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/525_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+39.02439
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/552_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/552_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/552_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/552_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/552_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+41.46341
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/578_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/578_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/578_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/578_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/578_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+43.90244
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/603_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/603_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/603_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/603_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/603_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+46.34146
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/627_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/627_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/627_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/627_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/627_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AG
+y
+AL
+48.78049
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/650_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/650_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/650_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/650_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/650_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+48.78049
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/672_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/672_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/672_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/672_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/672_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+46.34146
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/693_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/693_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/693_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/693_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/693_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+43.90244
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/713_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/713_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/713_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/713_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/713_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+41.46341
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/732_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/732_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/732_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/732_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/732_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+39.02439
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/750_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/750_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/750_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/750_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/750_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+36.58537
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/767_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/767_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/767_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/767_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/767_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+34.14634
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/783_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/783_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/783_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/783_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/783_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+31.70732
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/798_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/798_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/798_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/798_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/798_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+29.26829
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/812_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/812_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/812_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/812_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/812_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+26.82927
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/825_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/825_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/825_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/825_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/825_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+24.39024
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/837_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/837_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/837_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/837_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/837_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+21.95122
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/848_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/848_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/848_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/848_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/848_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+19.5122
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/858_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/858_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/858_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/858_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/858_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+17.07317
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/867_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/867_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/867_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/867_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/867_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+14.63415
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/875_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/875_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/875_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/875_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/875_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+12.19512
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/882_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/882_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/882_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/882_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/882_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+9.7561
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/888_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/888_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/888_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/888_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/888_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+7.31707
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/893_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/893_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/893_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/893_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/893_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+4.87805
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/897_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/897_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/897_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/897_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/897_composition_wt%"
+back
+back
+SET_ECHO
+
+
+GO SCHEIL
+global_minimization
+Y
+TERMINATION_CRITERIA
+F
+0.001
+set-numerical-limits
+2000
+
+
+
+TEMPERATURE-STEP
+1.0
+START-WIZARD
+user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+AL
+y
+AG
+2.43902
+CU
+1E-5
+
+1525.0
+*
+*
+NONE
+y
+N
+NONE
+s-d-a x t
+s-d-a y NL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/900_liquid_mol%"
+s-d-a y NS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/900_solid_mol%"
+s-d-a y BS(*)
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/900_solid_wt%"
+s-d-a y BL
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/900_liquid_wt%"
+s-d-a y W(*,*)
+
+plot
+m-e
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Scheil Simulation/900_composition_wt%"
+back
+back

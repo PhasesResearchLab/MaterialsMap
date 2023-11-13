@@ -13,6 +13,7 @@ fmat.egg-info/requires.txt
 fmat.egg-info/top_level.txt
 fmat/core/GenerateEqScript.py
 fmat/core/GenerateScheilScript.py
+fmat/core/ML.py
 fmat/core/ReadEqResult.py
 fmat/core/ReadScheilResult.py
 fmat/core/__init__.py
@@ -20,6 +21,7 @@ fmat/core/compositions.py
 fmat/core/istarmap.py
 fmat/core/pycalphad_run.py
 fmat/plot/FeasibilityMap.py
+fmat/plot/ML_plot.py
 fmat/plot/__init__.py
 fmat/plot/feasibility_helpers.py
 fmat/tests/__init__.py

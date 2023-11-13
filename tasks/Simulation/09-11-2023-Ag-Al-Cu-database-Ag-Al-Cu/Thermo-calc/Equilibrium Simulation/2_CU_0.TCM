@@ -1,0 +1,41 @@
+@@ 0th simulation, 100.0% ##############################
+set-echo
+
+go data
+sw user "/storage/work/suh960/feasibility_map/tasks/Ag-Al-Cu.TDB"
+def-sys CU 
+get
+go p-3
+reinit
+s-c P=101325 T=1773.15
+s-c N=1
+c-e
+l-e
+SCREEN
+VWCS
+s-a-v 1 t 573.15 1773.15
+10
+step
+NORMAL
+enter function TC=T-273.15
+
+ent tab
+PhaseMole
+TC NP(*) x(*,*)
+
+ent tab
+PhaseWt
+TC BPW(*) w(*,*)
+
+tabulate
+PhaseMole
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/41_mole.exp"
+tabulate
+PhaseWt
+"/storage/work/suh960/feasibility_map/tasks/Simulation/09-11-2023-Ag-Al-Cu-database-Ag-Al-Cu/Thermo-calc/Equilibrium Simulation/41_wt.exp"
+delete_sym
+PhaseMole
+delete_sym
+PhaseWt
+back
+back

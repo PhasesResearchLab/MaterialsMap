@@ -106,11 +106,14 @@ def findMaxUnallowedPhaseEq(EqResult, allowedPhases):
             allowedPhaseAmount = []
             for key_index in range(len(Eq['TK'])):
                 total = 0
+                total_a = 0
                 for key in Eq.keys():
                     if key in allowedPhases:
-                        total += int(float(Eq[key][key_index]))
+                        total_a += float(Eq[key][key_index])
+                    elif key != 'TK':
+                        total += float(Eq[key][key_index])
                 allowedPhaseAmount.append(total)
-            EqMaxBadPhaseAmount.append(1 - min(allowedPhaseAmount))
+            EqMaxBadPhaseAmount.append(max(allowedPhaseAmount))
     return EqMaxBadPhaseAmount
 
 def getFinalScheilResult(ScheilResult): 
@@ -149,14 +152,14 @@ def getFinalScheilResult(ScheilResult):
             sum = 0 
             for phase in phaseNames:
                 sum += finalPhases[phase][-1]
-            # sometimes the Scheil result will end up with a sum of 1.0000000000000002
+            # somemonoserif the Scheil result will end up with a sum of 1.0000000000000002
             # in this case, we will use the second last value
             if sum > 1:
                 for phase in phaseNames:
                     if phase in phaseAmount.keys():
                         try:
                             if phaseAmount[phase] != []:
-                                finalPhases[phase][-1] = phaseAmount[phase][-2]
+                                finalPhases[phase][-1] = phaseAmount[phase][-1]/sum
                             else:
                                 finalPhases[phase][-1] = 0
                         except Exception as e:
@@ -192,10 +195,13 @@ def findMaxUnallowedPhaseScheil(finalScheilResults, allowedPhases):
             ScheilMaxBadPhaseAmount.append('No Scheil Result')
             continue
         total = 0
+        total_a = 0
         for key in finalScheilResults.keys():
             if key in allowedPhases:
-                total += finalScheilResults[key][i]
-        ScheilMaxBadPhaseAmount.append(1 - total)
+                total_a += finalScheilResults[key][i]
+            elif key != 'TK' and key != 'Point':
+                total += float(finalScheilResults[key][i])
+        ScheilMaxBadPhaseAmount.append(total)
     return ScheilMaxBadPhaseAmount
 
 def getSolidLiquidTFromScheil(ScheilResult,solidCriterion):
@@ -341,10 +347,10 @@ def plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseA
     print('Plotting Scheil-Eq Feasibility Map')
     if not dynamicTRange:
         handles = [
-            mpl.patches.Patch(facecolor='#ffff33'),
-            mpl.patches.Patch(facecolor='#377eb8'),
-            mpl.patches.Patch(facecolor='#e41a1c'),
-            mpl.patches.Patch(facecolor='#4daf4a'),
+            mpl.patches.Patch(facecolor='purple'),
+            mpl.patches.Patch(facecolor='red'),
+            mpl.patches.Patch(facecolor='blue'),
+            mpl.patches.Patch(facecolor='green'),
             mpl.patches.Patch(facecolor='black')
         ]
         labels = [
@@ -356,10 +362,10 @@ def plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseA
         ]
     else:
         handles = [
-            mpl.patches.Patch(facecolor='#ffff33'),
-            mpl.patches.Patch(facecolor='#377eb8'),
-            mpl.patches.Patch(facecolor='#e41a1c'),
-            mpl.patches.Patch(facecolor='#4daf4a'),
+            mpl.patches.Patch(facecolor='purple'),
+            mpl.patches.Patch(facecolor='red'),
+            mpl.patches.Patch(facecolor='blue'),
+            mpl.patches.Patch(facecolor='green'),
             mpl.patches.Patch(facecolor='black'),
             mpl.patches.Patch(facecolor='yellow')
         ]
@@ -372,7 +378,7 @@ def plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseA
             'No Eq Result at low temperature'
         ]
     ###############################plot the figure##################################
-    dotSize = 17
+    dotSize = 22
     fig = plt.figure(figsize = (4,4), dpi = 300)
     ax = fig.add_subplot(projection='triangular')
     for index in range(len(coord)):
@@ -383,15 +389,15 @@ def plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseA
             eq_is_feasible = EqPointResult < EqThrshold
             scheil_is_feasible = ScheilPointResult < ScheilThreshold
             if not eq_is_feasible and not scheil_is_feasible:
-                ax.scatter(x_plot, y_plot,s=dotSize, label='Equilibrium and Scheil infeasible', c='#ffff33')
+                ax.scatter(x_plot, y_plot,s=dotSize, label='Equilibrium and Scheil infeasible', c='purple', marker='h')
                 continue
             if not eq_is_feasible and scheil_is_feasible:
-                ax.scatter(x_plot, y_plot,s=dotSize, label='Equilibrium infeasible, Scheil feasible', c='#377eb8')
+                ax.scatter(x_plot, y_plot,s=dotSize, label='Equilibrium infeasible, Scheil feasible', c='red', marker='h')
                 continue
             if not scheil_is_feasible and eq_is_feasible:
-                ax.scatter(x_plot, y_plot,s=dotSize, label='Equilibrium feasible, Scheil infeasible', c='#e41a1c')
+                ax.scatter(x_plot, y_plot,s=dotSize, label='Equilibrium feasible, Scheil infeasible', c='blue', marker='h')
                 continue
-            ax.scatter(x_plot, y_plot, label='Both Feasible',s=dotSize, c='#4daf4a')
+            ax.scatter(x_plot, y_plot, label='Both Feasible',s=dotSize, c='green', marker='h')
         else:
             if ScheilPointResult == 'No Scheil Result' or EqPointResult == 'No Eq Result' or EqPointResult == 'No Scheil Result' or EqPointResult == None:
                 ax.scatter(x_plot, y_plot,s=dotSize, label='No Scheil/Eq data', c='black')
@@ -402,12 +408,12 @@ def plotScheilEqFeasibilityMap(path,coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseA
 
     fmtted_comps = '-'.join(sorted(set(comps)))
     if dynamicTRange:
-        ax.set_title(f"{fmtted_comps}_DynamicRatio{round(dynamicRatio,3)}\nEq_Tolerance: {EqThrshold}\nScheil_Tolerance: {ScheilThreshold}", fontname = 'times', fontsize = 10)
+        ax.set_title(f"{fmtted_comps}_DynamicRatio{round(dynamicRatio,3)}\nEq_Tolerance: {EqThrshold}\nScheil_Tolerance: {ScheilThreshold}", fontname = 'monoserif', fontsize = 10)
     else:
-        ax.set_title(f"{fmtted_comps}_nonDynamic\nEq_Tolerance: {EqThrshold}\nScheil_Tolerance: {ScheilThreshold}", fontname = 'times', fontsize = 10)
-    ax.set_xlabel(f'W({xComp})', fontname = 'times', fontsize = 10)
-    ax.set_ylabel(f'W({yComp})', labelpad=-50, fontname = 'times', fontsize = 10)
-    fig.legend(handles=handles, labels=labels, loc='lower left',prop={'family':'times', 'size':10}, bbox_to_anchor=(0.8, 0.6))
+        ax.set_title(f"{fmtted_comps}_nonDynamic\nEq_Tolerance: {EqThrshold}\nScheil_Tolerance: {ScheilThreshold}", fontname = 'monoserif', fontsize = 10)
+    ax.set_xlabel(f'W({xComp})', fontname = 'monoserif', fontsize = 10)
+    ax.set_ylabel(f'W({yComp})', labelpad=-50, fontname = 'monoserif', fontsize = 10)
+    fig.legend(handles=handles, labels=labels, loc='lower left',prop={'family':'monoserif', 'size':10}, bbox_to_anchor=(0.8, 0.6))
     ax.tick_params(labelsize=10)
     if dynamicTRange:
         fig.savefig(f'{path}/{fmtted_comps}-EqScheil-dynamic_{round(dynamicRatio,3)}.tif', bbox_inches='tight')
@@ -434,7 +440,7 @@ def plotScheilTemperature(path,solidusT,liquidusT,coord,xComp,yComp,solidCriteri
     """
     print('####################################################################')
     print('Plotting Scheil-Eq Temperature Map')
-    dotSize = 12
+    dotSize = 20
     TName = ['solidusT (K)','liquidusT (K)']
     T_index = 0
     for T in [solidusT, liquidusT]:
@@ -459,13 +465,13 @@ def plotScheilTemperature(path,solidusT,liquidusT,coord,xComp,yComp,solidCriteri
         orientation='horizontal',fraction=0.035, pad=0.2,aspect=20)
         for t in cbar.ax.get_xticklabels():
             t.set_fontsize(10)
-            t.set_fontname('times')
+            t.set_fontname('monoserif')
         if T_index == 1:
-            plt.title(f'{TName[T_index-1]}\nsolidCriterion:{solidCriterion}\n{round(bottom,3)}-{round(top,3)}',fontsize = 10, fontname = 'times')
+            plt.title(f'{TName[T_index-1]}\nsolidCriterion:{solidCriterion}\n{round(bottom,3)}-{round(top,3)}',fontsize = 10, fontname = 'monoserif')
         else:
-            plt.title(f'{TName[T_index-1]}\n{round(bottom,3)}-{round(top,3)}',fontsize = 10, fontname = 'times')
-        plt.xlabel(f'X({xComp})',fontsize = 10, fontname = 'times')
-        plt.ylabel(f'X({yComp})', labelpad=-40,fontsize = 10, fontname = 'times')
+            plt.title(f'{TName[T_index-1]}\n{round(bottom,3)}-{round(top,3)}',fontsize = 10, fontname = 'monoserif')
+        plt.xlabel(f'X({xComp})',fontsize = 10, fontname = 'monoserif')
+        plt.ylabel(f'X({yComp})', labelpad=-40,fontsize = 10, fontname = 'monoserif')
 
         plt.tick_params(labelsize=10)
         plt.savefig(f'{path}/{TName[T_index-1]}.tif', bbox_inches='tight')
@@ -523,16 +529,16 @@ def plotScheilPhase(path, finalScheilResults,allowedPhases, coord,xComp,yComp):
             orientation='horizontal',fraction=0.035, pad=0.2,aspect=20)
         for t in cbar.ax.get_xticklabels():
             t.set_fontsize(10)
-            t.set_fontname('times')
+            t.set_fontname('monoserif')
         if phase == 'LIQUID':
-            plt.title('Remaining Liquid After Scheil', fontsize = 10, fontname = 'times')
+            plt.title('Remaining Liquid After Scheil', fontsize = 10, fontname = 'monoserif')
         else:
-            plt.title(phase, fontsize = 10, fontname = 'times')
-        plt.xlabel(f'W({xComp})',fontsize = 10, fontname = 'times')
-        plt.ylabel(f'W({yComp})',labelpad=-12.5,fontsize = 10, fontname = 'times')
+            plt.title(phase, fontsize = 10, fontname = 'monoserif')
+        plt.xlabel(f'W({xComp})',fontsize = 10, fontname = 'monoserif')
+        plt.ylabel(f'W({yComp})',labelpad=-12.5,fontsize = 10, fontname = 'monoserif')
 
-        plt.xticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'times')
-        plt.yticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'times')
+        plt.xticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'monoserif')
+        plt.yticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'monoserif')
 
     plt.tight_layout()
 
@@ -762,13 +768,13 @@ def plotHotTearingSusceptibilityMap(path, coord, xComp, yComp, FR, CSC, Kou, iCS
             orientation='horizontal',fraction=0.035, pad=0.2,aspect=20)
         for t in cbar.ax.get_xticklabels():
             t.set_fontsize(10)
-            t.set_fontname('times')
+            t.set_fontname('monoserif')
         # result = np.array(result)
-        plt.title(f'{criterion}',fontsize=10, fontname = 'times')
-        plt.xlabel(f'W({xComp})',fontsize=10, fontname = 'times')
-        plt.ylabel(f'W({yComp})', labelpad=-15,fontsize=10, fontname = 'times')
-        plt.xticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'times')
-        plt.yticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'times')
+        plt.title(f'{criterion}',fontsize=10, fontname = 'monoserif')
+        plt.xlabel(f'W({xComp})',fontsize=10, fontname = 'monoserif')
+        plt.ylabel(f'W({yComp})', labelpad=-15,fontsize=10, fontname = 'monoserif')
+        plt.xticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'monoserif')
+        plt.yticks([0,0.2,0.4,0.6,0.8,1],[0,0.2,0.4,0.6,0.8,1],fontsize=10, fontname = 'monoserif')
         ii += 1
     plt.subplots_adjust(wspace = 0)
     fig.savefig(f'{path}/hotTearing_normal.tif',bbox_inches='tight')

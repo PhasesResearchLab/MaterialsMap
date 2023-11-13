@@ -84,19 +84,27 @@ def pycalphad_eq(path):
             pass
     # Chang eq result to dict
     equilibrium_result = defaultdict(dict)
-    for num,i in enumerate(eq_results):
-        equilibrium_result['Point'+str(num)]['TK'] = list(i.T.values)
-        eq_phases_name = set(i.Phase.values.flatten().tolist()) - {''}
-        eq_phases = i.Phase.values.squeeze().tolist()
+    for num,eq in enumerate(eq_results):
+        equilibrium_result['Point'+str(num)]['TK'] = list(eq.T.values)
+        eq_phases_name = set(eq.Phase.values.flatten().tolist()) - {''}
+        eq_phases = eq.Phase.values.squeeze().tolist()
         for eq_phase in eq_phases_name:
             equilibrium_result['Point'+str(num)][eq_phase] = []
-            for n,va in enumerate(i["NP"].values.squeeze()):
-                if eq_phase not in eq_phases[n]:
+            for n,va in enumerate(eq["NP"].values.squeeze()):
+                count = eq_phases[n].count(eq_phase)
+                if count == 0:
                     equilibrium_result['Point'+str(num)][eq_phase].append(0)
-                else:
+                elif count == 1:
                     index = eq_phases[n].index(eq_phase)
                     equilibrium_result['Point'+str(num)][eq_phase].append("{:.8f}".format(float(va[index])))
-    
+                elif count == 2:
+                    index = [i for i, x in enumerate(eq_phases[n]) if x == eq_phase]
+                    result = 0
+                    for i in index:
+                        result += float(va[i])
+                    equilibrium_result['Point'+str(num)][eq_phase].append("{:.8f}".format(result))
+                else:
+                    print('error')
     isExist = os.path.exists(path+'/Pycalphad/Equilibrium Simulation/Result/')
     if not isExist:
         os.makedirs(path+'/Pycalphad/Equilibrium Simulation/Result/')
@@ -163,7 +171,7 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
             if len(j.keys()) == 1:
                 j = None
                 LiquidusTemp.append(intial_temperature)
-                break;
+                continue;
             for n,a in enumerate(j['LIQUID']):
                 if n+1 == len(j['LIQUID']):
                     print('cannot find liquid phase in eq results, start with back up temperature')
@@ -180,12 +188,12 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
     for phase_name in phases:
         try:
             mod = Model(dbf, comps, phase_name)
-            points_dict[phase_name] = _sample_phase_constitution(mod, point_sample, True, 500)
+            points_dict[phase_name] = _sample_phase_constitution(mod, point_sample, True, 2000)
         except DofError:
             pass
     liquid_name = 'LIQUID'
     step_temperature = 1.0
-    eq_kwargs = {'calc_opts': {'points': points_dict}}
+    eq_kwargs = {'adaptive':True, 'eq_kwargs':{'calc_opts': {'points': points_dict}}}
     stop = 0.0001
     verbose = False
     adaptive = True
@@ -197,7 +205,7 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
             composition[key] = float("{:.6f}".format(val))  
         comps_new = all_comp_tot[num]
         comps_new.append('VA')  
-        iter_args_scheil.append((dbf, comps_new, phases, composition, T_liquid[num], step_temperature,liquid_name,verbose, adaptive))
+        iter_args_scheil.append((dbf, comps_new, phases, composition, T_liquid[num], step_temperature,liquid_name,eq_kwargs,stop,verbose, adaptive))
     # Multiprocessing step:
     cores = os.cpu_count() - 1
     scheil_results_ori = []
@@ -211,8 +219,8 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
     for num,i in enumerate(scheil_results_ori):
         scheils = i.to_dict()
         scheil_result['Point'+str(num)]['TK'] = scheils['temperatures']
-        for pha,val in scheils['phase_amounts'].items():
-            if np.sum(val) != 0:
+        for pha,val in i.cum_phase_amounts.items():
+            if np.sum(val) > 1E-6:
                 scheil_result['Point'+str(num)][pha] = val
         scheil_result['Point'+str(num)]['LIQUID'] = (1.0 - np.array(scheils['fraction_solid'])).tolist()
     
@@ -225,3 +233,4 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
     f = open(path+'/Pycalphad/Scheil Simulation'+'/Result/data_mole.json','w')
     f.write(output_File)
     f.close()
+    return scheil_results_ori
