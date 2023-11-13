@@ -57,7 +57,7 @@ def pycalphad_eq(path):
             composition[key] = float("{:.6f}".format(val))    
         conds = {**composition}
         conds.update(potentials)
-        
+        print('aa',comps, phases, conds)
         iter_args_equilibrium.append((dbf, comps, phases, conds))
     # Multiprocessing step:
     cores = os.cpu_count() - 1
@@ -132,14 +132,14 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
             if len(j.keys()) == 1:
                 j = None
                 LiquidusTemp.append(intial_temperature)
-                continue;
+                break;
             for n,a in enumerate(j['LIQUID']):
                 if n+1 == len(j['LIQUID']):
                     print('cannot find liquid phase in eq results, start with back up temperature')
                     LiquidusTemp.append(intial_temperature)
                 elif float(a) < 1 and float(j['LIQUID'][n+1]) == 1:
                     LiquidusTemp.append(j['TK'][n+1])
-                    continue;
+                    break;
     if len(LiquidusTemp) == 0:
         T_liquid = [intial_temperature]*len(compositions_list)
     else:
@@ -164,6 +164,7 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
         print(f"{composition} ({num+1}/{len(compositions_list)})")
         for key,val in composition.items():
             composition[key] = float("{:.6f}".format(val))    
+        print('in',comps, phases, composition, T_liquid[num], step_temperature,liquid_name)
         iter_args_scheil.append((dbf, comps, phases, composition, T_liquid[num], step_temperature,liquid_name, eq_kwargs,
                                    stop, verbose, adaptive))
     # Multiprocessing step:

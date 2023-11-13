@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fmat
+Version: 0.1.3
+Summary: Feasibility MAP for materials design
+Author-email: Hui Sun <HuiSun@psu.edu>
+Project-URL: Bug Tracker, https://github.com/HUISUN24/feasibility_map/issues
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: <3.10,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
