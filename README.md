@@ -1,4 +1,4 @@
-# Feasibility Map
+# Feasibility mapper for MATerials design
 
 A simulation tool using [pycalphad](http://pycalphad.org) and Thermo_Calc.
 
@@ -88,17 +88,12 @@ feasibility map is suggested to be installed from PyPI.
 
     pip install fmat
 
-### Anaconda
-
-
-    conda install -c conda-forge fmat
-
 ### Development Versions
 
 To install an editable development version with pip:
 
-    git clone https://github.com/HUISUN24/feasibility_map.git
-    cd feasibility_map
+    git clone https://github.com/HUISUN24/fmat.git
+    cd fmat
     pip install -e .
 
 Upgrading scheil later requires you to run ``git pull`` in this directory.
