@@ -11,7 +11,12 @@ from scheil import simulate_scheil_solidification
 from multiprocessing import Pool
 from collections import defaultdict
 from fmat.ref_data import eleweight
+<<<<<<< HEAD
+=======
+import fmat.core.istarmap
+>>>>>>> origin/develop1
 from sys import argv
+import tqdm    
 import json
 
 def pycalphad_eq(path):
@@ -33,21 +38,33 @@ def pycalphad_eq(path):
     phases = list(dbf.phases.keys())
     potentials = {v.N: 1, v.T: setting[0], v.P: setting[7]}  # for equilibrium calculations
     compositions_list = []
+    indepcomp_list = []
+    all_comp_tot = []
     df = pd.read_excel(f'{path}/composition_for_feasibilityMap.xlsx')
     for n in range(len(df.index)):
         comp_list={}
-        for i in setting[5]:
+        all_comp = []
+        nocomp_list = []
+        indep = 0
+        for o,i in enumerate(setting[3]):
+            if indep == 0 and float(df.loc[n,[i]].values) > 0:
+                indep  = 1
+                indepcomp_list.append(i)
+                all_comp.append(i)
+                continue;
+            elif float(df.loc[n,[i]].values) < 1E-5:
+                nocomp_list.append(i)
+                continue
             i = i.upper()
-            if df.loc[n,[i]].values == 0:
-                comp_list[v.W(i)]=float(1E-5)
-            elif df.loc[n,[i]].values == 1:
-                comp_list[v.W(i)]=float(1-2E-5)
-            else:
-                comp_list[v.W(i)]=float(df.loc[n,[i]].values)
-        dep_comp = [x for x in setting[4] if x not in setting[5]]
-        comp_list_mole = v.get_mole_fractions(comp_list,v.Species(dep_comp[0].upper()),eleweight)
+            all_comp.append(i)
+            comp_list[v.W(i)]=float(df.loc[n,[i]].values)
+        comp_list_mole = v.get_mole_fractions(comp_list,v.Species(indepcomp_list[n]),eleweight)
+        if len(comp_list_mole) == 0:
+            comp_list_mole[v.X(nocomp_list[0])]=1E-5
+            all_comp.append(nocomp_list[0])
+        all_comp_tot.append(all_comp)
         compositions_list.append(comp_list_mole)
-    # Run simulations
+
     iter_args_equilibrium = []
     for num, composition in enumerate(compositions_list):
         print(f"{composition} ({num+1}/{len(compositions_list)})")
@@ -57,27 +74,45 @@ def pycalphad_eq(path):
             composition[key] = float("{:.6f}".format(val))    
         conds = {**composition}
         conds.update(potentials)
+<<<<<<< HEAD
         print('aa',comps, phases, conds)
         iter_args_equilibrium.append((dbf, comps, phases, conds))
+=======
+        comps_new = all_comp_tot[num]
+        comps_new.append('VA')
+        iter_args_equilibrium.append((dbf, comps_new, phases, conds))
+>>>>>>> origin/develop1
     # Multiprocessing step:
     cores = os.cpu_count() - 1
+    eq_results = []
     with Pool(cores) as p:
-        eq_results = p.starmap(equilibrium, iter_args_equilibrium)
+        for eq_result in tqdm.tqdm(p.istarmap(equilibrium, iter_args_equilibrium),
+                        total=len(iter_args_equilibrium)):
+            eq_results.append(eq_result)
+            pass
     # Chang eq result to dict
     equilibrium_result = defaultdict(dict)
-    for num,i in enumerate(eq_results):
-        equilibrium_result['Point'+str(num)]['TK'] = list(i.T.values)
-        eq_phases_name = set(i.Phase.values.flatten().tolist()) - {''}
-        eq_phases = i.Phase.values.squeeze().tolist()
+    for num,eq in enumerate(eq_results):
+        equilibrium_result['Point'+str(num)]['TK'] = list(eq.T.values)
+        eq_phases_name = set(eq.Phase.values.flatten().tolist()) - {''}
+        eq_phases = eq.Phase.values.squeeze().tolist()
         for eq_phase in eq_phases_name:
             equilibrium_result['Point'+str(num)][eq_phase] = []
-            for n,va in enumerate(i["NP"].values.squeeze()):
-                if eq_phase not in eq_phases[n]:
+            for n,va in enumerate(eq["NP"].values.squeeze()):
+                count = eq_phases[n].count(eq_phase)
+                if count == 0:
                     equilibrium_result['Point'+str(num)][eq_phase].append(0)
-                else:
+                elif count == 1:
                     index = eq_phases[n].index(eq_phase)
                     equilibrium_result['Point'+str(num)][eq_phase].append("{:.8f}".format(float(va[index])))
-    
+                elif count == 2:
+                    index = [i for i, x in enumerate(eq_phases[n]) if x == eq_phase]
+                    result = 0
+                    for i in index:
+                        result += float(va[i])
+                    equilibrium_result['Point'+str(num)][eq_phase].append("{:.8f}".format(result))
+                else:
+                    print('error')
     isExist = os.path.exists(path+'/Pycalphad/Equilibrium Simulation/Result/')
     if not isExist:
         os.makedirs(path+'/Pycalphad/Equilibrium Simulation/Result/')
@@ -109,19 +144,31 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
     comps.append('VA')
     phases = list(dbf.phases.keys())
     compositions_list = []
+    indepcomp_list = []
+    all_comp_tot = []
     df = pd.read_excel(f'{path}/composition_for_feasibilityMap.xlsx')
     for n in range(len(df.index)):
         comp_list={}
-        for i in setting[5]:
+        all_comp = []
+        nocomp_list = []
+        indep = 0
+        for o,i in enumerate(setting[3]):
+            if indep == 0 and float(df.loc[n,[i]].values) > 0:
+                indep  = 1
+                indepcomp_list.append(i)
+                all_comp.append(i)
+                continue;
+            elif float(df.loc[n,[i]].values) < 1E-5:
+                nocomp_list.append(i)
+                continue
             i = i.upper()
-            if df.loc[n,[i]].values == 0:
-                comp_list[v.W(i)]=float(1E-5)
-            elif df.loc[n,[i]].values == 1:
-                comp_list[v.W(i)]=float(1-2E-5)
-            else:
-                comp_list[v.W(i)]=float(df.loc[n,[i]].values)
-        dep_comp = [x for x in setting[4] if x not in setting[5]]
-        comp_list_mole = v.get_mole_fractions(comp_list,v.Species(dep_comp[0].upper()),eleweight)
+            all_comp.append(i)
+            comp_list[v.W(i)]=float(df.loc[n,[i]].values)
+        comp_list_mole = v.get_mole_fractions(comp_list,v.Species(indepcomp_list[n]),eleweight)
+        if len(comp_list_mole) == 0:
+            comp_list_mole[v.X(nocomp_list[0])]=1E-5
+            all_comp.append(nocomp_list[0])
+        all_comp_tot.append(all_comp)
         compositions_list.append(comp_list_mole)
     LiquidusTemp = []
     isExist = os.path.exists(path+'/Pycalphad/Equilibrium Simulation/Result/')
@@ -149,12 +196,16 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
     for phase_name in phases:
         try:
             mod = Model(dbf, comps, phase_name)
-            points_dict[phase_name] = _sample_phase_constitution(mod, point_sample, True, 500)
+            points_dict[phase_name] = _sample_phase_constitution(mod, point_sample, True, 2000)
         except DofError:
             pass
     liquid_name = 'LIQUID'
     step_temperature = 1.0
+<<<<<<< HEAD
     eq_kwargs = {'calc_opts': {'points': points_dict}}
+=======
+    eq_kwargs = {'adaptive':True, 'eq_kwargs':{'calc_opts': {'points': points_dict}}}
+>>>>>>> origin/develop1
     stop = 0.0001
     verbose = False
     adaptive = True
@@ -163,22 +214,32 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
     for num, composition in enumerate(compositions_list):
         print(f"{composition} ({num+1}/{len(compositions_list)})")
         for key,val in composition.items():
+<<<<<<< HEAD
             composition[key] = float("{:.6f}".format(val))    
         print('in',comps, phases, composition, T_liquid[num], step_temperature,liquid_name)
         iter_args_scheil.append((dbf, comps, phases, composition, T_liquid[num], step_temperature,liquid_name, eq_kwargs,
                                    stop, verbose, adaptive))
+=======
+            composition[key] = float("{:.6f}".format(val))  
+        comps_new = all_comp_tot[num]
+        comps_new.append('VA')  
+        iter_args_scheil.append((dbf, comps_new, phases, composition, T_liquid[num], step_temperature,liquid_name,eq_kwargs,stop,verbose, adaptive))
+>>>>>>> origin/develop1
     # Multiprocessing step:
     cores = os.cpu_count() - 1
-    
-    with Pool(cores) as p:    
-        scheil_results_ori = p.starmap(simulate_scheil_solidification, iter_args_scheil)
+    scheil_results_ori = []
+    with Pool(cores) as p:
+        for scheil_result_ori in tqdm.tqdm(p.istarmap(simulate_scheil_solidification, iter_args_scheil),
+                        total=len(iter_args_scheil)):
+            scheil_results_ori.append(scheil_result_ori)
+            pass
     # Chang scheil result to dict
     scheil_result = defaultdict(dict)
     for num,i in enumerate(scheil_results_ori):
         scheils = i.to_dict()
         scheil_result['Point'+str(num)]['TK'] = scheils['temperatures']
-        for pha,val in scheils['phase_amounts'].items():
-            if np.sum(val) != 0:
+        for pha,val in i.cum_phase_amounts.items():
+            if np.sum(val) > 1E-6:
                 scheil_result['Point'+str(num)][pha] = val
         scheil_result['Point'+str(num)]['LIQUID'] = (1.0 - np.array(scheils['fraction_solid'])).tolist()
     
@@ -191,3 +252,4 @@ def pycalphad_scheil(path,intial_temperature,liquid_name='LIQUID',step_temperatu
     f = open(path+'/Pycalphad/Scheil Simulation'+'/Result/data_mole.json','w')
     f.write(output_File)
     f.close()
+    return scheil_results_ori
