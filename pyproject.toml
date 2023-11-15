@@ -4,21 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fmat"
-version = "0.1.3"
+version = "0.2.0"
 authors = [
   { name="Hui Sun", email="HuiSun@psu.edu" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3.9",
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Chemistry",
     "Topic :: Scientific/Engineering :: Physics",
 ]
-description = "Feasibility MAP for materials design"
+description = "Feasibility mapper for MATerials design"
 readme = "README.md"
 
 requires-python = ">=3.8, <3.10"
@@ -34,4 +34,4 @@ dependencies = [
 ]
 
 [project.urls]
-"Bug Tracker" = "https://github.com/HUISUN24/feasibility_map/issues"
+"Bug Tracker" = "https://github.com/HUISUN24/fmat/issues"
