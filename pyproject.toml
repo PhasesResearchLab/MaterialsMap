@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fmat"
-version = "0.2.0"
+name = "materialsmap"
+version = "0.2.1"
 authors = [
   { name="Hui Sun", email="HuiSun@psu.edu" },
 ]
@@ -18,7 +18,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Chemistry",
     "Topic :: Scientific/Engineering :: Physics",
 ]
-description = "Feasibility mapper for MATerials design"
+description = "MaterialsMap is Python package for mapping properties, manufacturing feasibility, and desirability. We focus on guiding materials design graphically while proving API to underlying methods."
 readme = "README.md"
 
 requires-python = ">=3.8, <3.10"
@@ -34,4 +34,4 @@ dependencies = [
 ]
 
 [project.urls]
-"Bug Tracker" = "https://github.com/HUISUN24/fmat/issues"
+"Bug Tracker" = "https://github.com/HUISUN24/materialsmap/issues"
