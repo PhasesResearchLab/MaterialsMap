@@ -1,6 +1,6 @@
-# Feasibility mapper for MATerials design
+# MaterialsMap
 
-A simulation tool using [pycalphad](http://pycalphad.org) and Thermo_Calc.
+MaterialsMap is Python package for mapping properties, manufacturing feasibility, and desirability. We focus on guiding materials design graphically while proving API to underlying methods. It utilizes [pycalphad](http://pycalphad.org) and Thermo_Calc for thermodynamic calculations.
 
 ```python
 import os
