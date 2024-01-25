@@ -10,8 +10,8 @@ from pycalphad.core.utils import point_sample
 from scheil import simulate_scheil_solidification
 from multiprocessing import Pool
 from collections import defaultdict
-from fmat.ref_data import eleweight
-import fmat.core.istarmap
+from materialsmap.ref_data import eleweight
+import materialsmap.core.istarmap
 from sys import argv
 import tqdm    
 import json

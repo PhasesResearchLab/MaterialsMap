@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 import numpy as np
-from fmat.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
+from materialsmap.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
 from importlib_resources import files
 import json
 import shutil 
@@ -33,7 +33,7 @@ class TestCalculations(BaseTestCase):
         """test for setting up the pycalphad eq and scheil simulations
         
         """
-        self.path = str(files('fmat').joinpath('tests/testsCaseFiles'))
+        self.path = str(files('materialsmap').joinpath('tests/testsCaseFiles'))
         settings= ((600, 2000, 10),3,3,['AL', 'CU', 'AG'],['Cu', 'Ag', 'Al'],['Ag', 'Al'],self.path+'/Ag-Al-Cu.TDB',101325,'massFraction')
         np.save(self.path+'/setting.npy', settings)
 
@@ -47,7 +47,7 @@ class TestCalculations(BaseTestCase):
 
     @classmethod
     def tearDownClass(self):
-        self.path = str(files('fmat').joinpath('tests/testsCaseFiles'))
+        self.path = str(files('materialsmap').joinpath('tests/testsCaseFiles'))
         try:
             shutil.rmtree(self.path+'/Pycalphad')
         except OSError as why:

@@ -1,11 +1,11 @@
 import json
 import os
 from sklearn import neighbors
-from fmat.core.GenerateEqScript import getSettings
+from materialsmap.core.GenerateEqScript import getSettings
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-import fmat.plot.feasibility_helpers
+import materialsmap.plot.feasibility_helpers
 import math
 
 

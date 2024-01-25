@@ -1,4 +1,4 @@
-recursive-include fmat/tests/testCaseFiles *
+recursive-include materialsmap/tests/testCaseFiles *
 
 prune tasks
 prune docs

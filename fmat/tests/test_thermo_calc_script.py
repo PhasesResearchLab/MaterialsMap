@@ -1,9 +1,9 @@
 import unittest
 import numpy as np
-from fmat.core.GenerateEqScript import createEqScript
-from fmat.core.ReadEqResult import getEqdata
-from fmat.core.GenerateScheilScript import createScheilScript
-from fmat.core.ReadScheilResult import getScheilSolidPhase
+from materialsmap.core.GenerateEqScript import createEqScript
+from materialsmap.core.ReadEqResult import getEqdata
+from materialsmap.core.GenerateScheilScript import createScheilScript
+from materialsmap.core.ReadScheilResult import getScheilSolidPhase
 from importlib_resources import files
 import os
 from pathlib import Path
@@ -45,7 +45,7 @@ class TestCalculations(BaseTestCase):
         """test for setting up the pycalphad eq and scheil simulations
         
         """
-        self.path = str(files('fmat').joinpath('tests/testsCaseFiles'))
+        self.path = str(files('materialsmap').joinpath('tests/testsCaseFiles'))
 
     def test_createEqScript(self):
         createEqScript(self.path)
@@ -75,7 +75,7 @@ class TestCalculations(BaseTestCase):
 
     @classmethod
     def tearDownClass(self):
-        self.path = str(files('fmat').joinpath('tests/testsCaseFiles'))
+        self.path = str(files('materialsmap').joinpath('tests/testsCaseFiles'))
         try:
             os.remove(self.path+'/Thermo-calc/Equilibrium Simulation/0_CU_0.TCM')
             os.remove(self.path+'/Thermo-calc/Equilibrium Simulation/1_AL_0.TCM')

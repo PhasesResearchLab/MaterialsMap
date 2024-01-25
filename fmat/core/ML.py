@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from pycalphad import Database, equilibrium, Model, variables as v
-from fmat.ref_data import eleweight
+from materialsmap.ref_data import eleweight
 from collections import defaultdict
 import requests
 import json

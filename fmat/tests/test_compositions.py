@@ -1,5 +1,5 @@
 import unittest
-from fmat.core.compositions import generateCompositions,createComposition
+from materialsmap.core.compositions import generateCompositions,createComposition
 
 class TestCalculations(unittest.TestCase):
 

@@ -1,7 +1,7 @@
 import numpy as np
 import json
 import os
-from fmat.core.GenerateEqScript import getSettings, sortCompositions, findMainElement
+from materialsmap.core.GenerateEqScript import getSettings, sortCompositions, findMainElement
 ################################################################################
 #==============================================================================#
 ############################Scheil script#######################################

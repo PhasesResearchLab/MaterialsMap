@@ -9,14 +9,14 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from fmat.core.compositions import generateCompositions, createComposition
-from fmat.ref_data import periodic_table, materials
-from fmat.core.pycalphad_run import pycalphad_eq, pycalphad_scheil
-from fmat.core.GenerateEqScript import createEqScript
-from fmat.core.ReadEqResult import getEqdata
-from fmat.core.GenerateScheilScript import createScheilScript
-from fmat.core.ReadScheilResult import getScheilSolidPhase
-from fmat.plot.FeasibilityMap import plotMaps
+from materialsmap.core.compositions import generateCompositions, createComposition
+from materialsmap.ref_data import periodic_table, materials
+from materialsmap.core.pycalphad_run import pycalphad_eq, pycalphad_scheil
+from materialsmap.core.GenerateEqScript import createEqScript
+from materialsmap.core.ReadEqResult import getEqdata
+from materialsmap.core.GenerateScheilScript import createScheilScript
+from materialsmap.core.ReadScheilResult import getScheilSolidPhase
+from materialsmap.plot.FeasibilityMap import plotMaps
 
 # Create Compositions
 comps = ['SS304L', 'NiCr', 'V']
@@ -86,14 +86,14 @@ plotMaps(path, 'pycalphad')
 
 feasibility map is suggested to be installed from PyPI.
 
-    pip install fmat
+    pip install materialsmap
 
 ### Development Versions
 
 To install an editable development version with pip:
 
-    git clone https://github.com/HUISUN24/fmat.git
-    cd fmat
+    git clone https://github.com/HUISUN24/materialsmap.git
+    cd materialsmap
     pip install -e .
 
 Upgrading scheil later requires you to run ``git pull`` in this directory.

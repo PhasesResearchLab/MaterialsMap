@@ -9,5 +9,5 @@ __pycache__/
 # Submit files for slurm
 slurm*
 
-# FMAT Simulations
+# MaterialsMap Simulations
 tasks/Simulation

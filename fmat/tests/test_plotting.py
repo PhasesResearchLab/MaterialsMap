@@ -2,9 +2,9 @@ import unittest
 import os
 import numpy as np
 from pathlib import Path
-from fmat.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
+from materialsmap.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
 from importlib_resources import files
-from fmat.plot.FeasibilityMap import plotScheilEqFeasibilityMap,getSolidLiquidTFromScheil,plotScheilTemperature,plotScheilPhase,plotHotTearingSusceptibilityMap,getCriteria
+from materialsmap.plot.FeasibilityMap import plotScheilEqFeasibilityMap,getSolidLiquidTFromScheil,plotScheilTemperature,plotScheilPhase,plotHotTearingSusceptibilityMap,getCriteria
 
 
 class BaseTestCase(unittest.TestCase):
@@ -19,7 +19,7 @@ class BaseTestCase(unittest.TestCase):
 class TestCalculations(BaseTestCase):
     
     def setUp(self):
-        self.path = str(files('fmat').joinpath('tests/testsCaseFiles'))
+        self.path = str(files('materialsmap').joinpath('tests/testsCaseFiles'))
 
     def test_plotScheilEqFeasibilityMap(self):
         coord,EqMaxBadPhaseAmount,ScheilMaxBadPhaseAmount,EqThrshold,ScheilThreshold,xComp,yComp,dynamicTRange,comps,dynamicRatio = ([(0, 0), (0, 1), (1, 0)],[0, 0, 1],[0.9999982643265233, 0.0, 0.0],0.1,0.05,'Ag','Al',True,['Cu', 'Ag', 'Al'],0.6666666666666666)

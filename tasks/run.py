@@ -1,20 +1,20 @@
-from fmat.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
+from materialsmap.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
 import os
 import time
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from fmat.core.compositions import generateCompositions,createComposition
-from fmat.ref_data import periodic_table,materials
-from fmat.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
-from fmat.core.GenerateEqScript import createEqScript
-from fmat.core.ReadEqResult import getEqdata
-from fmat.core.GenerateScheilScript import createScheilScript
-from fmat.core.ReadScheilResult import getScheilSolidPhase
-from fmat.plot.FeasibilityMap import plotMaps
+from materialsmap.core.compositions import generateCompositions,createComposition
+from materialsmap.ref_data import periodic_table,materials
+from materialsmap.core.pycalphad_run import pycalphad_eq,pycalphad_scheil
+from materialsmap.core.GenerateEqScript import createEqScript
+from materialsmap.core.ReadEqResult import getEqdata
+from materialsmap.core.GenerateScheilScript import createScheilScript
+from materialsmap.core.ReadScheilResult import getScheilSolidPhase
+from materialsmap.plot.FeasibilityMap import plotMaps
 from pycalphad import Database, equilibrium, Model, variables as v
-from fmat.ref_data import eleweight
+from materialsmap.ref_data import eleweight
 from pycalphad.core.calculate import _sample_phase_constitution
 from pycalphad.core.errors import DofError
 from pycalphad.core.utils import point_sample

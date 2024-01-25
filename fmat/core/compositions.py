@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from multiprocessing import Pool
 from tqdm import tqdm
-from fmat.ref_data import relatedEle
+from materialsmap.ref_data import relatedEle
 
 def generateCompositions(indep_comps,ngridpts):
     """Generate composition list based on the independetn components and grid density

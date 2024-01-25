@@ -1,5 +1,5 @@
 import os
-from fmat.core.GenerateEqScript import getSettings
+from materialsmap.core.GenerateEqScript import getSettings
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd

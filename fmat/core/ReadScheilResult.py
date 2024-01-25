@@ -1,5 +1,5 @@
 import json
-from fmat.core.GenerateEqScript import getSettings
+from materialsmap.core.GenerateEqScript import getSettings
 from sklearn import neighbors
 import numpy as np
 from tqdm import tqdm

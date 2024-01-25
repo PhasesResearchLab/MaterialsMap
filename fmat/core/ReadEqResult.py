@@ -1,4 +1,4 @@
-from fmat.core.GenerateEqScript import getSettings
+from materialsmap.core.GenerateEqScript import getSettings
 from tqdm import tqdm
 import numpy as np
 import json
