@@ -9,6 +9,8 @@ authors = [
   { name="Hui Sun", email="HuiSun@psu.edu" },
 ]
 classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -34,4 +36,6 @@ dependencies = [
 ]
 
 [project.urls]
+"Homepage" = "https://github.com/HUISUN24/materialsmap"
+"Research Group" = "https://phaseslab.org"
 "Bug Tracker" = "https://github.com/HUISUN24/materialsmap/issues"
