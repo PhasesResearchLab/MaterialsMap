@@ -1,6 +1,14 @@
-# MaterialsMap
+`MaterialsMap` is Python package for mapping properties, manufacturing feasibility, and desirability. We focus on guiding materials design graphically while proving an API to underlying methods, so that others can utlize it as an engine behind their tools, like machine learning (ML) based alloy design.
 
-MaterialsMap is Python package for mapping properties, manufacturing feasibility, and desirability. We focus on guiding materials design graphically while proving API to underlying methods. It utilizes [pycalphad](http://pycalphad.org) and Thermo_Calc for thermodynamic calculations.
+It can utilize both free and open source (FOSS) [pycalphad](http://pycalphad.org) and industry-trusted [Thermo-Calc](https://thermocalc.com) for performing underlying thermodynamic calculations.
+
+## Theory
+
+`MaterialsMap` uses several different methods out-of-the-box. These include thermodynamic equlibrium calculations, [Scheil-Gulliver solidification](https://en.wikipedia.org/wiki/Scheil_equation), and 5 different models for predicting cracking susceptibility.
+
+Our upcoming (March 2024) article discusses in detail all implemented methods, underlying thermodynamics, and their applications.
+
+## Use Example
 
 ```python
 import os
@@ -82,27 +90,29 @@ plotMaps(path, 'pycalphad')
 
 ## Installation
 
-### pip (recommended)
+### PyPI (recommended)
 
-feasibility map is suggested to be installed from PyPI.
-
-    pip install materialsmap
+`MaterialsMap` can be quickly installed from PyPI with a simple:
+```cmd
+pip install materialsmap
+```
 
 ### Development Versions
 
 To install an editable development version with pip:
 
-    git clone https://github.com/HUISUN24/materialsmap.git
-    cd materialsmap
-    pip install -e .
-
+```cmd
+git clone https://github.com/HUISUN24/materialsmap.git
+cd materialsmap
+pip install -e .
+```
+    
 Upgrading scheil later requires you to run ``git pull`` in this directory.
 
-Run the automated tests using
+## Testing
 
-    pytest
-
-## Theory
-
-Uses equilibrium and Scheil simulations to allow material design with properties
+Automated testing is performed on every commit to the repository, as defined in `.github/workflows/lastCommit.yml` workflow. On your system, you can also run it with a simple:
+```cmd
+pytest
+```
 
