@@ -1,6 +1,11 @@
 name: Last Commit
 
-on: [push]
+on: 
+  push:
+    paths:
+      - 'materialsmap/**'
+      - '.github/workflows/lastCommit.yml'
+  workflow_dispatch:
 
 jobs:
   tests:
