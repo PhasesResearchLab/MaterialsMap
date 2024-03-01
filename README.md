@@ -8,9 +8,9 @@ It can utilize both free and open source (FOSS) [pycalphad](http://pycalphad.org
 
 Our upcoming (March 2024) article discusses in detail all implemented methods, underlying thermodynamics, and their applications.
 
-## Use Example
+## Use Example (SS304L-NiCr-V)
 
-![results of SS04L-NiCr-V](https://github.com/HUISUN24/feasibility_map/blob/main/docs/demo-results.png)
+![results of SS304L-NiCr-V](https://raw.githubusercontent.com/HUISUN24/MaterialsMap/main/docs/demo-results.png)
 
 ```python
 import os
