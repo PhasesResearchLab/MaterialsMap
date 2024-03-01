@@ -1,5 +1,6 @@
 
 [![Cross-Platform Tests](https://github.com/HUISUN24/MaterialsMap/actions/workflows/lastCommit.yml/badge.svg)](https://github.com/HUISUN24/MaterialsMap/actions/workflows/lastCommit.yml)
+[![PyPI - Version](https://img.shields.io/pypi/v/materialsmap?label=PyPI&color=green)](https://pypi.org/project/materialsmap)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
