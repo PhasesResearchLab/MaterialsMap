@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "materialsmap"
-version = "0.2.1"
+version = "0.2.2"
 authors = [
   { name="Hui Sun", email="HuiSun@psu.edu" },
 ]
