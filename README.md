@@ -1,3 +1,8 @@
+
+[![Cross-Platform Tests](https://github.com/HUISUN24/MaterialsMap/actions/workflows/lastCommit.yml/badge.svg)](https://github.com/HUISUN24/MaterialsMap/actions/workflows/lastCommit.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 `MaterialsMap` is Python package for mapping properties, manufacturing feasibility, and desirability. We focus on guiding materials design graphically while proving an API to underlying methods, so that others can utlize it as an engine behind their tools, like machine learning (ML) based alloy design.
 
 It can utilize both free and open source (FOSS) [pycalphad](http://pycalphad.org) and industry-trusted [Thermo-Calc](https://thermocalc.com) for performing underlying thermodynamic calculations.
