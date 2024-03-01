@@ -10,6 +10,8 @@ Our upcoming (March 2024) article discusses in detail all implemented methods, u
 
 ## Use Example
 
+![results of SS04L-NiCr-V](https://github.com/HUISUN24/feasibility_map/blob/main/docs/demo-results.png)
+
 ```python
 import os
 import time
@@ -85,8 +87,6 @@ getScheilSolidPhase(path)
 # Plot deleterious phase diagram and crack susceptibility map 
 plotMaps(path, 'pycalphad')
 ```
-
-![results of SS04L-NiCr-V](https://github.com/HUISUN24/feasibility_map/blob/main/docs/demo-results.png)
 
 ## Installation
 
