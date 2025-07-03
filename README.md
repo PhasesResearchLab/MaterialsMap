@@ -13,10 +13,6 @@ It can utilize both free and open source (FOSS) [pycalphad](http://pycalphad.org
 
 ## Theory
 
- uses several different methods out-of-the-box. These include thermodynamic equlibrium calculations, , and 5 different models for predicting cracking susceptibility.
-
-Our upcoming (March 2024) article discusses in detail all implemented methods, underlying thermodynamics, and their applications.
-
 `MaterialsMap` uses several different methods out-of-the-box. These include thermodynamic equilibrium calculations, [Scheil-Gulliver solidification](https://en.wikipedia.org/wiki/Scheil_equation), and 5 different models for predicting cracking susceptibility. The thermodynamic equilibrium calculations predict phases formed at specific conditions by minimizing the Gibbs energy of the system and are typically closer to experimnental observations of slow-colled materials, while the Scheil-Gulliver simulations capture non-equilibrium rapid solidification effects (e.g. in welding or additive manufacturing) by assuming no diffusion in solid phases, equilibrium at the solid/liquid interface, and complete mixing in the liquid phase. `MaterialsMap` combines these approaches to provide comprehensive phase formation predictions at the two extrema of cooling rates to determine feasibility. The five implemented crack susceptibility criteria include Freezing Range (FR), Crack Susceptibility Coefficient (CSC), Kou Criteria, Improved Crack Susceptibility Coefficient (iCSC), and Simplified Rappaz-Drezet-Gramaud (sRDG), enabling users to assess hot cracking risks from multiple perspectives / mechanisms. 
 
 Please refer to [our 2024 Materialia article](https://doi.org/10.1016/j.mtla.2024.102153) which discusses in detail all implemented methods, underlying thermodynamics, and their applications.
