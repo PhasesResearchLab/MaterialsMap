@@ -11,9 +11,7 @@ authors = [
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.9"
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
@@ -25,7 +23,7 @@ classifiers = [
 description = "MaterialsMap is Python package for mapping properties, manufacturing feasibility, and desirability. We focus on guiding materials design graphically while proving API to underlying methods."
 readme = "README.md"
 
-requires-python = ">=3.8, <3.12"
+requires-python = ">=3.8, <3.10"
 dependencies = [
     "matplotlib<3.8",
     "numpy<=1.22",
