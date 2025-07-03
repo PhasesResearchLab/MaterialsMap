@@ -3,6 +3,9 @@
 [![PyPI - Version](https://img.shields.io/pypi/v/materialsmap?label=PyPI&color=green)](https://pypi.org/project/materialsmap)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**2024 Paper:**
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.mtla.2024.102153-blue)](https://doi.org/10.1016/j.mtla.2024.102153)
+[![Arxiv](https://img.shields.io/badge/arXiv-2403.19084-8F1515?style=flat&logo=arxiv&logoColor=red)](https://doi.org/10.48550/arXiv.2403.19084)
 
 `MaterialsMap` is Python package for mapping properties, manufacturing feasibility, and desirability. We focus on guiding materials design graphically while proving an API to underlying methods, so that others can utlize it as an engine behind their tools, like machine learning (ML) based alloy design.
 
