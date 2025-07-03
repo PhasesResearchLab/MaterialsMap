@@ -7,6 +7,8 @@ name = "materialsmap"
 version = "0.2.3"
 authors = [
   { name="Hui Sun", email="HuiSun@psu.edu" },
+  { name="Adam M. Krajewski", email="ak@psu.edu" },
+  { name="Zhening Yang", email="zvy5212@psu.edu" }
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
